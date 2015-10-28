@@ -1,0 +1,2169 @@
+gd_info ; 取得当前安装的 GD 库的信息
+getimagesize ; 取得图像大小
+getimagesizefromstring ; 从字符串中获取图像尺寸信息
+iptcembed ; 将二进制 IPTC 数据嵌入到一幅 JPEG 图像中
+iptcparse ; 将二进制 IPTC 块解析为单个标记
+jpeg2wbmp ; 将 JPEG 图像文件转换为 WBMP 图像文件
+png2wbmp ; 将 PNG 图像文件转换为 WBMP 图像文件
+image2wbmp ; 以 WBMP 格式将图像输出到浏览器或文件
+imageaffine ; 返回经过仿射变换后的图像，剪切区域可选
+imageaffinematrixconcat ; Concat two matrices (as in doing many ops in one go)
+imageaffinematrixget ; Return an image containing the affine tramsformed src image, using an optional clipping area
+imagealphablending ; 设定图像的混色模式
+imageantialias ; 是否使用抗锯齿（antialias）功能
+imagearc ; 画椭圆弧
+imagechar ; 水平地画一个字符
+imagecharup ; 垂直地画一个字符
+imagecolorallocate ; 为一幅图像分配颜色
+imagecolorallocatealpha ; 为一幅图像分配颜色 + alpha
+imagecolorat ; 取得某像素的颜色索引值
+imagecolorclosest ; 取得与指定的颜色最接近的颜色的索引值
+imagecolorclosestalpha ; 取得与指定的颜色加透明度最接近的颜色
+imagecolorclosesthwb ; 取得与给定颜色最接近的色度的黑白色的索引
+imagecolordeallocate ; 取消图像颜色的分配
+imagecolorexact ; 取得指定颜色的索引值
+imagecolorexactalpha ; 取得指定的颜色加透明度的索引值
+imagecolormatch ; 使一个图像中调色板版本的颜色与真彩色版本更能匹配
+imagecolorresolve ; 取得指定颜色的索引值或有可能得到的最接近的替代值
+imagecolorresolvealpha ; 取得指定颜色 + alpha 的索引值或有可能得到的最接近的替代值
+imagecolorset ; 给指定调色板索引设定颜色
+imagecolorsforindex ; 取得某索引的颜色
+imagecolorstotal ; 取得一幅图像的调色板中颜色的数目
+imagecolortransparent ; 将某个颜色定义为透明色
+imageconvolution ; 用系数 div 和 offset 申请一个 3x3 的卷积矩阵
+imagecopy ; 拷贝图像的一部分
+imagecopymerge ; 拷贝并合并图像的一部分
+imagecopymergegray ; 用灰度拷贝并合并图像的一部分
+imagecopyresampled ; 重采样拷贝部分图像并调整大小
+imagecopyresized ; 拷贝部分图像并调整大小
+imagecreate ; 新建一个基于调色板的图像
+imagecreatefromgd ; 从 GD 文件或 URL 新建一图像
+imagecreatefromgd2 ; 从 GD2 文件或 URL 新建一图像
+imagecreatefromgd2part ; 从给定的 GD2 文件或 URL 中的部分新建一图像
+imagecreatefromgif ; 由文件或 URL 创建一个新图象。
+imagecreatefromjpeg ; 由文件或 URL 创建一个新图象。
+imagecreatefrompng ; 由文件或 URL 创建一个新图象。
+imagecreatefromstring ; 从字符串中的图像流新建一图像
+imagecreatefromwbmp ; 由文件或 URL 创建一个新图象。
+imagecreatefromwebp ; 由文件或 URL 创建一个新图象。
+imagecreatefromxbm ; 由文件或 URL 创建一个新图象。
+imagecreatefromxpm ; 由文件或 URL 创建一个新图象。
+imagecreatetruecolor ; 新建一个真彩色图像
+imagecrop ; Crop an image using the given coordinates and size, x, y, width and height
+imagecropauto ; Crop an image automatically using one of the available modes
+imagedashedline ; 画一虚线
+imagedestroy ; 销毁一图像
+imageellipse ; 画一个椭圆
+imagefill ; 区域填充
+imagefilledarc ; 画一椭圆弧且填充
+imagefilledellipse ; 画一椭圆并填充
+imagefilledpolygon ; 画一多边形并填充
+imagefilledrectangle ; 画一矩形并填充
+imagefilltoborder ; 区域填充到指定颜色的边界为止
+imagefilter ; 对图像使用过滤器
+imageflip ; Flips an image using a given mode
+imagefontheight ; 取得字体高度
+imagefontwidth ; 取得字体宽度
+imageftbbox ; 给出一个使用 FreeType 2 字体的文本框
+imagefttext ; 使用 FreeType 2 字体将文本写入图像
+imagegammacorrect ; 对 GD 图像应用 gamma 修正
+imagegd ; 将 GD 图像输出到浏览器或文件
+imagegd2 ; 将 GD2 图像输出到浏览器或文件
+imagegif ; 输出图象到浏览器或文件。
+imagegrabscreen ; Captures the whole screen
+imagegrabwindow ; Captures a window
+imageinterlace ; 激活或禁止隔行扫描
+imageistruecolor ; 检查图像是否为真彩色图像
+imagejpeg ; 输出图象到浏览器或文件。
+imagelayereffect ; 设定 alpha 混色标志以使用绑定的 libgd 分层效果
+imageline ; 画一条线段
+imageloadfont ; 载入一新字体
+imagepalettecopy ; 将调色板从一幅图像拷贝到另一幅
+imagepalettetotruecolor ; Converts a palette based image to true color
+imagepng ; 以 PNG 格式将图像输出到浏览器或文件
+imagepolygon ; 画一个多边形
+imagepsbbox ; 给出一个使用 PostScript Type1 字体的文本方框
+imagepsencodefont ; 改变字体中的字符编码矢量
+imagepsextendfont ; 扩充或精简字体
+imagepsfreefont ; 释放一个 PostScript Type 1 字体所占用的内存
+imagepsloadfont ; 从文件中加载一个 PostScript Type 1 字体
+imagepsslantfont ; 倾斜某字体
+imagepstext ; 用 PostScript Type1 字体把文本字符串画在图像上
+imagerectangle ; 画一个矩形
+imagerotate ; 用给定角度旋转图像
+imagesavealpha ; 设置标记以在保存 PNG 图像时保存完整的 alpha 通道信息（与单一透明色相反）
+imagescale ; Scale an image using the given new width and height
+imagesetbrush ; 设定画线用的画笔图像
+imagesetinterpolation ; Set the interpolation method
+imagesetpixel ; 画一个单一像素
+imagesetstyle ; 设定画线的风格
+imagesetthickness ; 设定画线的宽度
+imagesettile ; 设定用于填充的贴图
+imagestring ; 水平地画一行字符串
+imagestringup ; 垂直地画一行字符串
+imagesx ; 取得图像宽度
+imagesy ; 取得图像高度
+imagetruecolortopalette ; 将真彩色图像转换为调色板图像
+imagettfbbox ; 取得使用 TrueType 字体的文本的范围
+imagettftext ; 用 TrueType 字体向图像写入文本
+imagetypes ; 返回当前 PHP 版本所支持的图像类型
+imagewbmp ; 以 WBMP 格式将图像输出到浏览器或文件
+imagewebp ; 将 WebP 格式的图像输出到浏览器或文件
+imagexbm ; 将 XBM 图像输出到浏览器或文件
+image_type_to_extension ; 取得图像类型的文件后缀
+PDF_activate_item ; Activate structure element or other content item
+PDF_add_annotation ; Add annotation [deprecated]
+PDF_add_bookmark ; Add bookmark for current page [deprecated]
+PDF_add_launchlink ; Add launch annotation for current page [deprecated]
+PDF_add_locallink ; Add link annotation for current page [deprecated]
+PDF_add_nameddest ; Create named destination
+PDF_add_note ; Set annotation for current page [deprecated]
+PDF_add_outline ; Add bookmark for current page [deprecated]
+PDF_add_pdflink ; Add file link annotation for current page [deprecated]
+PDF_add_table_cell ; Add a cell to a new or existing table
+PDF_add_textflow ; Create Textflow or add text to existing Textflow
+PDF_add_thumbnail ; Add thumbnail for current page
+PDF_add_weblink ; Add weblink for current page [deprecated]
+PDF_arc ; Draw a counterclockwise circular arc segment
+PDF_arcn ; Draw a clockwise circular arc segment
+PDF_attach_file ; Add file attachment for current page [deprecated]
+PDF_begin_document ; Create new PDF file
+PDF_begin_font ; Start a Type 3 font definition
+PDF_begin_glyph ; Start glyph definition for Type 3 font
+PDF_begin_item ; Open structure element or other content item
+PDF_begin_layer ; Start layer
+PDF_begin_page ; Start new page [deprecated]
+PDF_begin_page_ext ; Start new page
+PDF_begin_pattern ; Start pattern definition
+PDF_begin_template ; Start template definition [deprecated]
+PDF_begin_template_ext ; Start template definition
+PDF_circle ; Draw a circle
+PDF_clip ; Clip to current path
+PDF_close ; Close pdf resource [deprecated]
+PDF_closepath ; Close current path
+PDF_closepath_fill_stroke ; Close, fill and stroke current path
+PDF_closepath_stroke ; Close and stroke path
+PDF_close_image ; Close image
+PDF_close_pdi ; Close the input PDF document [deprecated]
+PDF_close_pdi_page ; Close the page handle
+PDF_concat ; Concatenate a matrix to the CTM
+PDF_continue_text ; Output text in next line
+PDF_create_3dview ; Create 3D view
+PDF_create_action ; Create action for objects or events
+PDF_create_annotation ; Create rectangular annotation
+PDF_create_bookmark ; Create bookmark
+PDF_create_field ; Create form field
+PDF_create_fieldgroup ; Create form field group
+PDF_create_gstate ; Create graphics state object
+PDF_create_pvf ; Create PDFlib virtual file
+PDF_create_textflow ; Create textflow object
+PDF_curveto ; Draw Bezier curve
+PDF_define_layer ; Create layer definition
+PDF_delete ; Delete PDFlib object
+PDF_delete_pvf ; Delete PDFlib virtual file
+PDF_delete_table ; Delete table object
+PDF_delete_textflow ; Delete textflow object
+PDF_encoding_set_char ; Add glyph name and/or Unicode value
+PDF_endpath ; End current path
+PDF_end_document ; Close PDF file
+PDF_end_font ; Terminate Type 3 font definition
+PDF_end_glyph ; Terminate glyph definition for Type 3 font
+PDF_end_item ; Close structure element or other content item
+PDF_end_layer ; Deactivate all active layers
+PDF_end_page ; Finish page
+PDF_end_page_ext ; Finish page
+PDF_end_pattern ; Finish pattern
+PDF_end_template ; Finish template
+PDF_fill ; Fill current path
+PDF_fill_imageblock ; Fill image block with variable data
+PDF_fill_pdfblock ; Fill PDF block with variable data
+PDF_fill_stroke ; Fill and stroke path
+PDF_fill_textblock ; Fill text block with variable data
+PDF_findfont ; Prepare font for later use [deprecated]
+PDF_fit_image ; Place image or template
+PDF_fit_pdi_page ; Place imported PDF page
+PDF_fit_table ; Place table on page
+PDF_fit_textflow ; Format textflow in rectangular area
+PDF_fit_textline ; Place single line of text
+PDF_get_apiname ; Get name of unsuccessfull API function
+PDF_get_buffer ; Get PDF output buffer
+PDF_get_errmsg ; Get error text
+PDF_get_errnum ; Get error number
+PDF_get_font ; Get font [deprecated]
+PDF_get_fontname ; Get font name [deprecated]
+PDF_get_fontsize ; Font handling [deprecated]
+PDF_get_image_height ; Get image height [deprecated]
+PDF_get_image_width ; Get image width [deprecated]
+PDF_get_majorversion ; Get major version number [deprecated]
+PDF_get_minorversion ; Get minor version number [deprecated]
+PDF_get_parameter ; Get string parameter
+PDF_get_pdi_parameter ; Get PDI string parameter [deprecated]
+PDF_get_pdi_value ; Get PDI numerical parameter [deprecated]
+PDF_get_value ; Get numerical parameter
+PDF_info_font ; Query detailed information about a loaded font
+PDF_info_matchbox ; Query matchbox information
+PDF_info_table ; Retrieve table information
+PDF_info_textflow ; Query textflow state
+PDF_info_textline ; Perform textline formatting and query metrics
+PDF_initgraphics ; Reset graphic state
+PDF_lineto ; Draw a line
+PDF_load_3ddata ; Load 3D model
+PDF_load_font ; Search and prepare font
+PDF_load_iccprofile ; Search and prepare ICC profile
+PDF_load_image ; Open image file
+PDF_makespotcolor ; Make spot color
+PDF_moveto ; Set current point
+PDF_new ; Create PDFlib object
+PDF_open_ccitt ; Open raw CCITT image [deprecated]
+PDF_open_file ; Create PDF file [deprecated]
+PDF_open_gif ; Open GIF image [deprecated]
+PDF_open_image ; Use image data [deprecated]
+PDF_open_image_file ; Read image from file [deprecated]
+PDF_open_jpeg ; Open JPEG image [deprecated]
+PDF_open_memory_image ; Open image created with PHP's image functions [not supported]
+PDF_open_pdi ; Open PDF file [deprecated]
+PDF_open_pdi_document ; Prepare a pdi document
+PDF_open_pdi_page ; Prepare a page
+PDF_open_tiff ; Open TIFF image [deprecated]
+PDF_pcos_get_number ; Get value of pCOS path with type number or boolean
+PDF_pcos_get_stream ; Get contents of pCOS path with type stream, fstream, or string
+PDF_pcos_get_string ; Get value of pCOS path with type name, string, or boolean
+PDF_place_image ; Place image on the page [deprecated]
+PDF_place_pdi_page ; Place PDF page [deprecated]
+PDF_process_pdi ; Process imported PDF document
+PDF_rect ; Draw rectangle
+PDF_restore ; Restore graphics state
+PDF_resume_page ; Resume page
+PDF_rotate ; Rotate coordinate system
+PDF_save ; Save graphics state
+PDF_scale ; Scale coordinate system
+PDF_setcolor ; Set fill and stroke color
+PDF_setdash ; Set simple dash pattern
+PDF_setdashpattern ; Set dash pattern
+PDF_setflat ; Set flatness
+PDF_setfont ; Set font
+PDF_setgray ; Set color to gray [deprecated]
+PDF_setgray_fill ; Set fill color to gray [deprecated]
+PDF_setgray_stroke ; Set stroke color to gray [deprecated]
+PDF_setlinecap ; Set linecap parameter
+PDF_setlinejoin ; Set linejoin parameter
+PDF_setlinewidth ; Set line width
+PDF_setmatrix ; Set current transformation matrix
+PDF_setmiterlimit ; Set miter limit
+PDF_setpolydash ; Set complicated dash pattern [deprecated]
+PDF_setrgbcolor ; Set fill and stroke rgb color values [deprecated]
+PDF_setrgbcolor_fill ; Set fill rgb color values [deprecated]
+PDF_setrgbcolor_stroke ; Set stroke rgb color values [deprecated]
+PDF_set_border_color ; Set border color of annotations [deprecated]
+PDF_set_border_dash ; Set border dash style of annotations [deprecated]
+PDF_set_border_style ; Set border style of annotations [deprecated]
+PDF_set_char_spacing ; Set character spacing [deprecated]
+PDF_set_duration ; Set duration between pages [deprecated]
+PDF_set_gstate ; Activate graphics state object
+PDF_set_horiz_scaling ; Set horizontal text scaling [deprecated]
+PDF_set_info ; Fill document info field
+PDF_set_info_author ; Fill the author document info field [deprecated]
+PDF_set_info_creator ; Fill the creator document info field [deprecated]
+PDF_set_info_keywords ; Fill the keywords document info field [deprecated]
+PDF_set_info_subject ; Fill the subject document info field [deprecated]
+PDF_set_info_title ; Fill the title document info field [deprecated]
+PDF_set_layer_dependency ; Define relationships among layers
+PDF_set_leading ; Set distance between text lines [deprecated]
+PDF_set_parameter ; Set string parameter
+PDF_set_text_matrix ; Set text matrix [deprecated]
+PDF_set_text_pos ; Set text position
+PDF_set_text_rendering ; Determine text rendering [deprecated]
+PDF_set_text_rise ; Set text rise [deprecated]
+PDF_set_value ; Set numerical parameter
+PDF_set_word_spacing ; Set spacing between words [deprecated]
+PDF_shading ; Define blend
+PDF_shading_pattern ; Define shading pattern
+PDF_shfill ; Fill area with shading
+PDF_show ; Output text at current position
+PDF_show_boxed ; Output text in a box [deprecated]
+PDF_show_xy ; Output text at given position
+PDF_skew ; Skew the coordinate system
+PDF_stringwidth ; Return width of text
+PDF_stroke ; Stroke path
+PDF_suspend_page ; Suspend page
+PDF_translate ; Set origin of coordinate system
+PDF_utf8_to_utf16 ; Convert string from UTF-8 to UTF-16
+PDF_utf16_to_utf8 ; Convert string from UTF-16 to UTF-8
+PDF_utf32_to_utf16 ; Convert string from UTF-32 to UTF-16
+fdf_add_doc_javascript ; Adds javascript code to the FDF document
+fdf_add_template ; Adds a template into the FDF document
+fdf_close ; Close an FDF document
+fdf_create ; Create a new FDF document
+fdf_enum_values ; Call a user defined function for each document value
+fdf_errno ; Return error code for last fdf operation
+fdf_error ; Return error description for FDF error code
+fdf_get_ap ; Get the appearance of a field
+fdf_get_attachment ; Extracts uploaded file embedded in the FDF
+fdf_get_encoding ; Get the value of the /Encoding key
+fdf_get_file ; Get the value of the /F key
+fdf_get_flags ; Gets the flags of a field
+fdf_get_opt ; Gets a value from the opt array of a field
+fdf_get_status ; Get the value of the /STATUS key
+fdf_get_value ; Get the value of a field
+fdf_get_version ; Gets version number for FDF API or file
+fdf_header ; Sets FDF-specific output headers
+fdf_next_field_name ; Get the next field name
+fdf_open ; Open a FDF document
+fdf_open_string ; Read a FDF document from a string
+fdf_remove_item ; Sets target frame for form
+fdf_save ; Save a FDF document
+fdf_save_string ; Returns the FDF document as a string
+fdf_set_ap ; Set the appearance of a field
+fdf_set_encoding ; Sets FDF character encoding
+fdf_set_file ; Set PDF document to display FDF data in
+fdf_set_flags ; Sets a flag of a field
+fdf_set_javascript_action ; Sets an javascript action of a field
+fdf_set_on_import_javascript ; Adds javascript code to be executed when Acrobat opens the FDF
+fdf_set_opt ; Sets an option of a field
+fdf_set_status ; Set the value of the /STATUS key
+fdf_set_submit_form_action ; Sets a submit form action of a field
+fdf_set_target_frame ; Set target frame for form display
+fdf_set_value ; Set the value of a field
+fdf_set_version ; Sets version number for a FDF file
+
+pspell_add_to_personal ; Add the word to a personal wordlist
+pspell_add_to_session ; Add the word to the wordlist in the current session
+pspell_check ; Check a word
+pspell_clear_session ; Clear the current session
+pspell_config_create ; Create a config used to open a dictionary
+pspell_config_data_dir ; location of language data files
+pspell_config_dict_dir ; Location of the main word list
+pspell_config_ignore ; Ignore words less than N characters long
+pspell_config_mode ; Change the mode number of suggestions returned
+pspell_config_personal ; Set a file that contains personal wordlist
+pspell_config_repl ; Set a file that contains replacement pairs
+pspell_config_runtogether ; Consider run-together words as valid compounds
+pspell_new ; Load a new dictionary
+pspell_new_config ; Load a new dictionary with settings based on a given config
+pspell_new_personal ; Load a new dictionary with personal wordlist
+pspell_save_wordlist ; Save the personal wordlist to a file
+pspell_store_replacement ; Store a replacement pair for a word
+pspell_suggest ; Suggest spellings of a word
+
+cyrus_authenticate ; Authenticate against a Cyrus IMAP server
+cyrus_bind ; Bind callbacks to a Cyrus IMAP connection
+cyrus_close ; Close connection to a Cyrus IMAP server
+cyrus_connect ; Connect to a Cyrus IMAP server
+cyrus_query ; Send a query to a Cyrus IMAP server
+cyrus_unbind ; Unbind ...
+imap_8bit ; Convert an 8bit string to a quoted-printable string
+imap_alerts ; Returns all IMAP alert messages that have occurred
+imap_append ; Append a string message to a specified mailbox
+imap_base64 ; Decode BASE64 encoded text
+imap_binary ; Convert an 8bit string to a base64 string
+imap_body ; Read the message body
+imap_bodystruct ; Read the structure of a specified body section of a specific message
+imap_check ; Check current mailbox
+imap_clearflag_full ; Clears flags on messages
+imap_close ; Close an IMAP stream
+imap_create ; 别名 imap_createmailbox
+imap_createmailbox ; Create a new mailbox
+imap_delete ; Mark a message for deletion from current mailbox
+imap_deletemailbox ; Delete a mailbox
+imap_errors ; Returns all of the IMAP errors that have occurred
+imap_expunge ; Delete all messages marked for deletion
+imap_fetchbody ; Fetch a particular section of the body of the message
+imap_fetchheader ; Returns header for a message
+imap_fetchmime ; Fetch MIME headers for a particular section of the message
+imap_fetchstructure ; Read the structure of a particular message
+imap_fetchtext ; 别名 imap_body
+imap_fetch_overview ; Read an overview of the information in the headers of the given message
+imap_gc ; Clears IMAP cache
+imap_getacl ; Gets the ACL for a given mailbox
+imap_getmailboxes ; Read the list of mailboxes, returning detailed information on each one
+imap_getsubscribed ; List all the subscribed mailboxes
+imap_get_quota ; Retrieve the quota level settings, and usage statics per mailbox
+imap_get_quotaroot ; Retrieve the quota settings per user
+imap_header ; 别名 imap_headerinfo
+imap_headerinfo ; Read the header of the message
+imap_headers ; Returns headers for all messages in a mailbox
+imap_last_error ; Gets the last IMAP error that occurred during this page request
+imap_list ; Read the list of mailboxes
+imap_listmailbox ; 别名 imap_list
+imap_listscan ; Returns the list of mailboxes that matches the given text
+imap_listsubscribed ; 别名 imap_lsub
+imap_lsub ; List all the subscribed mailboxes
+imap_mail ; Send an email message
+imap_mailboxmsginfo ; Get information about the current mailbox
+imap_mail_compose ; Create a MIME message based on given envelope and body sections
+imap_mail_copy ; Copy specified messages to a mailbox
+imap_mail_move ; Move specified messages to a mailbox
+imap_mime_header_decode ; Decode MIME header elements
+imap_msgno ; Gets the message sequence number for the given UID
+imap_num_msg ; Gets the number of messages in the current mailbox
+imap_num_recent ; Gets the number of recent messages in current mailbox
+imap_open ; Open an IMAP stream to a mailbox
+imap_ping ; Check if the IMAP stream is still active
+imap_qprint ; Convert a quoted-printable string to an 8 bit string
+imap_rename ; 别名 imap_renamemailbox
+imap_renamemailbox ; Rename an old mailbox to new mailbox
+imap_reopen ; Reopen IMAP stream to new mailbox
+imap_rfc822_parse_adrlist ; Parses an address string
+imap_rfc822_parse_headers ; Parse mail headers from a string
+imap_rfc822_write_address ; Returns a properly formatted email address given the mailbox, host, and personal info
+imap_savebody ; Save a specific body section to a file
+imap_scan ; 别名 imap_listscan
+imap_scanmailbox ; 别名 imap_listscan
+imap_search ; This function returns an array of messages matching the given search criteria
+imap_setacl ; Sets the ACL for a given mailbox
+imap_setflag_full ; Sets flags on messages
+imap_set_quota ; Sets a quota for a given mailbox
+imap_sort ; Gets and sort messages
+imap_status ; Returns status information on a mailbox
+imap_subscribe ; Subscribe to a mailbox
+imap_thread ; Returns a tree of threaded message
+imap_timeout ; Set or fetch imap timeout
+imap_uid ; This function returns the UID for the given message sequence number
+imap_undelete ; Unmark the message which is marked deleted
+imap_unsubscribe ; Unsubscribe from a mailbox
+imap_utf7_decode ; Decodes a modified UTF-7 encoded string
+imap_utf7_encode ; Converts ISO-8859-1 string to modified UTF-7 text
+imap_utf8 ; Converts MIME-encoded text to UTF-8
+mailparse_determine_best_xfer_encoding ; Gets the best way of encoding
+mailparse_msg_create ; Create a mime mail resource
+mailparse_msg_extract_part ; Extracts/decodes a message section
+mailparse_msg_extract_part_file ; Extracts/decodes a message section
+mailparse_msg_extract_whole_part_file ; Extracts a message section including headers without decoding the transfer encoding
+mailparse_msg_free ; Frees a MIME resource
+mailparse_msg_get_part ; Returns a handle on a given section in a mimemessage
+mailparse_msg_get_part_data ; Returns an associative array of info about the message
+mailparse_msg_get_structure ; Returns an array of mime section names in the supplied message
+mailparse_msg_parse ; Incrementally parse data into buffer
+mailparse_msg_parse_file ; Parses a file
+mailparse_rfc822_parse_addresses ; Parse RFC 822 compliant addresses
+mailparse_stream_encode ; Streams data from source file pointer, apply encoding and write to destfp
+mailparse_uudecode_all ; Scans the data from fp and extract each embedded uuencoded file
+vpopmail_add_alias_domain ; Add an alias for a virtual domain
+vpopmail_add_alias_domain_ex ; Add alias to an existing virtual domain
+vpopmail_add_domain ; Add a new virtual domain
+vpopmail_add_domain_ex ; Add a new virtual domain
+vpopmail_add_user ; Add a new user to the specified virtual domain
+vpopmail_alias_add ; Insert a virtual alias
+vpopmail_alias_del ; Deletes all virtual aliases of a user
+vpopmail_alias_del_domain ; Deletes all virtual aliases of a domain
+vpopmail_alias_get ; Get all lines of an alias for a domain
+vpopmail_alias_get_all ; Get all lines of an alias for a domain
+vpopmail_auth_user ; Attempt to validate a username/domain/password
+vpopmail_del_domain ; Delete a virtual domain
+vpopmail_del_domain_ex ; Delete a virtual domain
+vpopmail_del_user ; Delete a user from a virtual domain
+vpopmail_error ; Get text message for last vpopmail error
+vpopmail_passwd ; Change a virtual user's password
+vpopmail_set_user_quota ; Sets a virtual user's quota
+xdiff_file_bdiff ; Make binary diff of two files
+xdiff_file_bdiff_size ; Read a size of file created by applying a binary diff
+xdiff_file_bpatch ; Patch a file with a binary diff
+xdiff_file_diff ; Make unified diff of two files
+xdiff_file_diff_binary ; Alias of xdiff_file_bdiff
+xdiff_file_merge3 ; Merge 3 files into one
+xdiff_file_patch ; Patch a file with an unified diff
+xdiff_file_patch_binary ; Alias of xdiff_file_bpatch
+xdiff_file_rabdiff ; Make binary diff of two files using the Rabin's polynomial fingerprinting algorithm
+xdiff_string_bdiff ; Make binary diff of two strings
+xdiff_string_bdiff_size ; Read a size of file created by applying a binary diff
+xdiff_string_bpatch ; Patch a string with a binary diff
+xdiff_string_diff ; Make unified diff of two strings
+xdiff_string_diff_binary ; Alias of xdiff_string_bdiff
+xdiff_string_merge3 ; Merge 3 strings into one
+xdiff_string_patch ; Patch a string with an unified diff
+xdiff_string_patch_binary ; Alias of xdiff_string_bpatch
+xdiff_string_rabdiff ; Make binary diff of two strings using the Rabin's polynomial fingerprinting algorithm
+XMLDiff\Base::diff ; Produce diff of two XML documents
+XMLDiff\Base::merge ; Produce new XML document based on diff
+XMLDiff\Base::__construct ; Constructor
+XMLDiff\DOM::diff ; Diff two DOMDocument objects
+XMLDiff\DOM::merge ; Produce merged DOMDocument
+XMLDiff\File::diff ; Diff two XML files
+XMLDiff\File::merge ; Produce merged XML document
+XMLDiff\Memory::diff ; Diff two XML documents
+XMLDiff\Memory::merge ; Produce merged XML document
+Yaf_Action_Abstract::execute ; 执行动作
+Yaf_Action_Abstract::getController ; 得到控制器实例
+Yaf_Application::app ; 获取当前的Yaf_Application实例
+Yaf_Application::bootstrap ; 调用bootstrap
+Yaf_Application::clearLastError ; 清除最后的错误信息
+Yaf_Application::environ ; 获取当前Yaf_Application的环境名
+Yaf_Application::execute ; 运行回调函数
+Yaf_Application::getAppDirectory ; 获取应用的目录
+Yaf_Application::getConfig ; 获取 Yaf_Config_Abstract 的实例
+Yaf_Application::getDispatcher ; 获取 Yaf_Dispatcher 的实例
+Yaf_Application::getLastErrorMsg ; 获取最近产生的错误的错误信息
+Yaf_Application::getLastErrorNo ; 获取最后产生的错误的错误代码
+Yaf_Application::getModules ; 获取在配置文件中申明的模块
+Yaf_Application::run ; 运行 Yaf_Application
+Yaf_Application::setAppDirectory ; 改变应用目录
+Yaf_Application::__clone ; Yaf_Application不能被克隆
+Yaf_Application::__construct ; Yaf_Application的构造函数
+Yaf_Application::__destruct ; 析构函数
+Yaf_Application::__sleep ; Yaf_Application 不能被序列化
+Yaf_Application::__wakeup ; Yaf_Application 不能被反序列化
+Yaf_Config_Abstract::get ; Getter
+Yaf_Config_Abstract::readonly ; 寻找只读配置
+Yaf_Config_Abstract::set ; Setter
+Yaf_Config_Abstract::toArray ; 转换为数组
+Yaf_Config_Ini::count ; 返回配置的节数量
+Yaf_Config_Ini::current ; 返回当前节点
+Yaf_Config_Ini::key ; 返回当前元素的键
+Yaf_Config_Ini::next ; 向前移动到下一个元素
+Yaf_Config_Ini::offsetExists ; 检查一个偏移位置是否存在
+Yaf_Config_Ini::offsetGet ; 获取一个偏移位置的值
+Yaf_Config_Ini::offsetSet ; 设置一个偏移位置的值
+Yaf_Config_Ini::offsetUnset ; 复位一个偏移位置的值
+Yaf_Config_Ini::readonly ; 检查配置是否只读
+Yaf_Config_Ini::rewind ; 检查当前位置是否有效
+Yaf_Config_Ini::toArray ; 转换为数组的格式
+Yaf_Config_Ini::valid ; 检查迭代器是否有效
+Yaf_Config_Ini::__construct ; 构造函数
+Yaf_Config_Ini::__get ; 读取节点配置
+Yaf_Config_Ini::__isset ; 检查节点是否存在
+Yaf_Config_Ini::__set ; The __set purpose
+Yaf_Config_Simple::count ; 返回配置的节数量
+Yaf_Config_Simple::current ; 返回当前节点
+Yaf_Config_Simple::key ; 返回当前元素的键
+Yaf_Config_Simple::next ; 向前移动到下一个元素
+Yaf_Config_Simple::offsetExists ; 检查一个偏移位置是否存在
+Yaf_Config_Simple::offsetGet ; 获取一个偏移位置的值
+Yaf_Config_Simple::offsetSet ; 设置一个偏移位置的值
+Yaf_Config_Simple::offsetUnset ; 复位一个偏移位置的值
+Yaf_Config_Simple::readonly ; 检查配置是否只读
+Yaf_Config_Simple::rewind ; 检查当前位置是否有效
+Yaf_Config_Simple::toArray ; 转换为数组的格式
+Yaf_Config_Simple::valid ; 检查迭代器是否有效
+Yaf_Config_Simple::__construct ; 构造函数
+Yaf_Config_Simple::__get ; 读取节点配置
+Yaf_Config_Simple::__isset ; 检查节点是否存在
+Yaf_Config_Simple::__set ; 设置节点配置
+Yaf_Controller_Abstract::display ; The display purpose
+Yaf_Controller_Abstract::forward ; The forward purpose
+Yaf_Controller_Abstract::getInvokeArg ; The getInvokeArg purpose
+Yaf_Controller_Abstract::getInvokeArgs ; The getInvokeArgs purpose
+Yaf_Controller_Abstract::getModuleName ; 获取当前控制器所属的模块名
+Yaf_Controller_Abstract::getRequest ; The getRequest purpose
+Yaf_Controller_Abstract::getResponse ; The getResponse purpose
+Yaf_Controller_Abstract::getView ; 获取当前的视图引擎
+Yaf_Controller_Abstract::getViewpath ; The getViewpath purpose
+Yaf_Controller_Abstract::init ; 控制器初始化
+Yaf_Controller_Abstract::initView ; The initView purpose
+Yaf_Controller_Abstract::redirect ; The redirect purpose
+Yaf_Controller_Abstract::render ; 渲染视图模板
+Yaf_Controller_Abstract::setViewpath ; The setViewpath purpose
+Yaf_Controller_Abstract::__clone ; Yaf_Controller_Abstract 不能被克隆
+Yaf_Controller_Abstract::__construct ; Yaf_Controller_Abstract constructor
+Yaf_Dispatcher::autoRender ; 开启/关闭自动渲染功能
+Yaf_Dispatcher::catchException ; 开启/关闭自动异常捕获功能
+Yaf_Dispatcher::disableView ; 关闭自动渲染
+Yaf_Dispatcher::dispatch ; 分发请求
+Yaf_Dispatcher::enableView ; 开启自动渲染
+Yaf_Dispatcher::flushInstantly ; 打开关闭自动响应
+Yaf_Dispatcher::getApplication ; 获取当前的Yaf_Application实例
+Yaf_Dispatcher::getInstance ; 获取当前的Yaf_Dispatcher实例
+Yaf_Dispatcher::getRequest ; 获取当前的请求实例
+Yaf_Dispatcher::getRouter ; 获取路由器
+Yaf_Dispatcher::initView ; 初始化视图引擎并返回它
+Yaf_Dispatcher::registerPlugin ; 注册一个插件
+Yaf_Dispatcher::returnResponse ; The returnResponse purpose
+Yaf_Dispatcher::setDefaultAction ; 设置路由的默认动作
+Yaf_Dispatcher::setDefaultController ; 设置路由的默认控制器
+Yaf_Dispatcher::setDefaultModule ; 设置路由的默认模块
+Yaf_Dispatcher::setErrorHandler ; 设置错误处理函数
+Yaf_Dispatcher::setRequest ; The setRequest purpose
+Yaf_Dispatcher::setView ; 设置视图引擎
+Yaf_Dispatcher::throwException ; 开启/关闭异常抛出
+Yaf_Dispatcher::__clone ; Yaf_Dispatcher 不能被克隆
+Yaf_Dispatcher::__construct ; Yaf_Dispatcher 构造函数
+Yaf_Dispatcher::__sleep ; Yaf_Dispatcher 不能被序列化
+Yaf_Dispatcher::__wakeup ; Yaf_Dispatcher 不能被反序列化
+Yaf_Exception::getPrevious ; The getPrevious purpose
+Yaf_Exception::__construct ; The __construct purpose
+Yaf_Loader::autoload ; The autoload purpose
+Yaf_Loader::clearLocalNamespace ; The clearLocalNamespace purpose
+Yaf_Loader::getInstance ; The getInstance purpose
+Yaf_Loader::getLibraryPath ; get the library path
+Yaf_Loader::getLocalNamespace ; The getLocalNamespace purpose
+Yaf_Loader::import ; The import purpose
+Yaf_Loader::isLocalName ; The isLocalName purpose
+Yaf_Loader::registerLocalNamespace ; 注册本地类前缀
+Yaf_Loader::setLibraryPath ; 改变library路径
+Yaf_Loader::__clone ; The __clone purpose
+Yaf_Loader::__construct ; The __construct purpose
+Yaf_Loader::__sleep ; The __sleep purpose
+Yaf_Loader::__wakeup ; The __wakeup purpose
+Yaf_Plugin_Abstract::dispatchLoopShutdown ; The dispatchLoopShutdown purpose
+Yaf_Plugin_Abstract::dispatchLoopStartup ; The dispatchLoopStartup purpose
+Yaf_Plugin_Abstract::postDispatch ; The postDispatch purpose
+Yaf_Plugin_Abstract::preDispatch ; The preDispatch purpose
+Yaf_Plugin_Abstract::preResponse ; The preResponse purpose
+Yaf_Plugin_Abstract::routerShutdown ; The routerShutdown purpose
+Yaf_Plugin_Abstract::routerStartup ; RouterStartup hook
+Yaf_Registry::del ; Remove an item from registry
+Yaf_Registry::get ; Retrieve an item from registry
+Yaf_Registry::has ; Check whether an item exists
+Yaf_Registry::set ; Add an item into registry
+Yaf_Registry::__clone ; The __clone purpose
+Yaf_Registry::__construct ; Yaf_Registry implements singleton
+Yaf_Request_Abstract::getActionName ; The getActionName purpose
+Yaf_Request_Abstract::getBaseUri ; The getBaseUri purpose
+Yaf_Request_Abstract::getControllerName ; The getControllerName purpose
+Yaf_Request_Abstract::getEnv ; 取得ENV变量的值
+Yaf_Request_Abstract::getException ; The getException purpose
+Yaf_Request_Abstract::getLanguage ; The getLanguage purpose
+Yaf_Request_Abstract::getMethod ; The getMethod purpose
+Yaf_Request_Abstract::getModuleName ; The getModuleName purpose
+Yaf_Request_Abstract::getParam ; The getParam purpose
+Yaf_Request_Abstract::getParams ; The getParams purpose
+Yaf_Request_Abstract::getRequestUri ; The getRequestUri purpose
+Yaf_Request_Abstract::getServer ; 返回SERVER变量的值
+Yaf_Request_Abstract::isCli ; The isCli purpose
+Yaf_Request_Abstract::isDispatched ; The isDispatched purpose
+Yaf_Request_Abstract::isGet ; The isGet purpose
+Yaf_Request_Abstract::isHead ; The isHead purpose
+Yaf_Request_Abstract::isOptions ; The isOptions purpose
+Yaf_Request_Abstract::isPost ; The isPost purpose
+Yaf_Request_Abstract::isPut ; The isPut purpose
+Yaf_Request_Abstract::isRouted ; The isRouted purpose
+Yaf_Request_Abstract::isXmlHttpRequest ; The isXmlHttpRequest purpose
+Yaf_Request_Abstract::setActionName ; The setActionName purpose
+Yaf_Request_Abstract::setBaseUri ; The setBaseUri purpose
+Yaf_Request_Abstract::setControllerName ; The setControllerName purpose
+Yaf_Request_Abstract::setDispatched ; The setDispatched purpose
+Yaf_Request_Abstract::setModuleName ; The setModuleName purpose
+Yaf_Request_Abstract::setParam ; The setParam purpose
+Yaf_Request_Abstract::setRequestUri ; The setRequestUri purpose
+Yaf_Request_Abstract::setRouted ; The setRouted purpose
+Yaf_Request_Http::get ; 从客户端返回变量
+Yaf_Request_Http::getCookie ; 返回Cookie变量
+Yaf_Request_Http::getFiles ; The getFiles purpose
+Yaf_Request_Http::getPost ; 返回POST变量
+Yaf_Request_Http::getQuery ; fetch a query parameter
+Yaf_Request_Http::getRequest ; The getRequest purpose
+Yaf_Request_Http::isXmlHttpRequest ; 是否为Ajax请求
+Yaf_Request_Http::__clone ; The __clone purpose
+Yaf_Request_Http::__construct ; The __construct purpose
+Yaf_Request_Simple::get ; The get purpose
+Yaf_Request_Simple::getCookie ; The getCookie purpose
+Yaf_Request_Simple::getFiles ; The getFiles purpose
+Yaf_Request_Simple::getPost ; The getPost purpose
+Yaf_Request_Simple::getQuery ; The getQuery purpose
+Yaf_Request_Simple::getRequest ; The getRequest purpose
+Yaf_Request_Simple::isXmlHttpRequest ; The isXmlHttpRequest purpose
+Yaf_Request_Simple::__clone ; The __clone purpose
+Yaf_Request_Simple::__construct ; The __construct purpose
+Yaf_Response_Abstract::appendBody ; 往已有的响应body后附加新的内容
+Yaf_Response_Abstract::clearBody ; 清除已经设置的响应body
+Yaf_Response_Abstract::clearHeaders ; The clearHeaders purpose
+Yaf_Response_Abstract::getBody ; 获取已经设置的响应body
+Yaf_Response_Abstract::getHeader ; The getHeader purpose
+Yaf_Response_Abstract::prependBody ; The prependBody purpose
+Yaf_Response_Abstract::response ; send response
+Yaf_Response_Abstract::setAllHeaders ; The setAllHeaders purpose
+Yaf_Response_Abstract::setBody ; 设置响应的Body
+Yaf_Response_Abstract::setHeader ; The setHeader purpose
+Yaf_Response_Abstract::setRedirect ; The setRedirect purpose
+Yaf_Response_Abstract::__clone ; The __clone purpose
+Yaf_Response_Abstract::__construct ; The __construct purpose
+Yaf_Response_Abstract::__destruct ; The __destruct purpose
+Yaf_Response_Abstract::__toString ; The __toString purpose
+Yaf_Router::addConfig ; 向Router中添加配置文件中定义的路由
+Yaf_Router::addRoute ; 往Router中添加新的路由
+Yaf_Router::getCurrentRoute ; 取得当前有效的路由名
+Yaf_Router::getRoute ; The getRoute purpose
+Yaf_Router::getRoutes ; The getRoutes purpose
+Yaf_Router::route ; The route purpose
+Yaf_Router::__construct ; Yaf_Router constructor
+Yaf_Route_Interface::assemble ; 将指定路由规则组合成一个url
+Yaf_Route_Interface::route ; route a request
+Yaf_Route_Map::assemble ; 组合url
+Yaf_Route_Map::route ; The route purpose
+Yaf_Route_Map::__construct ; The __construct purpose
+Yaf_Route_Regex::assemble ; 组合url
+Yaf_Route_Regex::route ; The route purpose
+Yaf_Route_Regex::__construct ; The __construct purpose
+Yaf_Route_Rewrite::assemble ; 组合url
+Yaf_Route_Rewrite::route ; The route purpose
+Yaf_Route_Rewrite::__construct ; The __construct purpose
+Yaf_Route_Simple::assemble ; 组合url
+Yaf_Route_Simple::route ; Route a request
+Yaf_Route_Simple::__construct ; Yaf_Route_Simple constructor
+Yaf_Route_Static::assemble ; 组合url
+Yaf_Route_Static::match ; The match purpose
+Yaf_Route_Static::route ; Route a request
+Yaf_Route_Supervar::assemble ; 组合url
+Yaf_Route_Supervar::route ; The route purpose
+Yaf_Route_Supervar::__construct ; The __construct purpose
+Yaf_Session::count ; The count purpose
+Yaf_Session::current ; The current purpose
+Yaf_Session::del ; The del purpose
+Yaf_Session::getInstance ; The getInstance purpose
+Yaf_Session::has ; The has purpose
+Yaf_Session::key ; The key purpose
+Yaf_Session::next ; The next purpose
+Yaf_Session::offsetExists ; The offsetExists purpose
+Yaf_Session::offsetGet ; The offsetGet purpose
+Yaf_Session::offsetSet ; The offsetSet purpose
+Yaf_Session::offsetUnset ; The offsetUnset purpose
+Yaf_Session::rewind ; The rewind purpose
+Yaf_Session::start ; The start purpose
+Yaf_Session::valid ; The valid purpose
+Yaf_Session::__clone ; The __clone purpose
+Yaf_Session::__construct ; The __construct purpose
+Yaf_Session::__get ; The __get purpose
+Yaf_Session::__isset ; The __isset purpose
+Yaf_Session::__set ; The __set purpose
+Yaf_Session::__sleep ; The __sleep purpose
+Yaf_Session::__unset ; The __unset purpose
+Yaf_Session::__wakeup ; The __wakeup purpose
+Yaf_View_Interface::assign ; 为视图引擎分配一个模板变量
+Yaf_View_Interface::display ; 渲染一个视图模板, 并直接输出给请求端
+Yaf_View_Interface::getScriptPath ; The getScriptPath purpose
+Yaf_View_Interface::render ; 渲染一个视图模板
+Yaf_View_Interface::setScriptPath ; The setScriptPath purpose
+Yaf_View_Simple::assign ; 为视图引擎分配一个模板变量
+Yaf_View_Simple::assignRef ; The assignRef purpose
+Yaf_View_Simple::clear ; Clear Assigned values
+Yaf_View_Simple::display ; 渲染一个视图模板, 并直接输出给请求端
+Yaf_View_Simple::eval ; 渲染模板
+Yaf_View_Simple::getScriptPath ; 获取模板目录
+Yaf_View_Simple::render ; 渲染模板
+Yaf_View_Simple::setScriptPath ; 设置模板的目录
+Yaf_View_Simple::__construct ; Constructor of Yaf_View_Simple
+Yaf_View_Simple::__get ; 获取视图引擎的一个模板变量值
+Yaf_View_Simple::__isset ; The __isset purpose
+Yaf_View_Simple::__set ; 为视图引擎分配一个模板变量
+BSON\Binary::getSubType ; Description
+BSON\Binary::__construct ; Description
+BSON\fromArray ; Description
+BSON\fromJSON ; Description
+BSON\Javascript::__construct ; Description
+BSON\ObjectID::__construct ; Description
+BSON\ObjectID::__toString ; Description
+BSON\Regex::getFlags ; Description
+BSON\Regex::getPattern ; Description
+BSON\Regex::__construct ; Description
+BSON\Regex::__toString ; Description
+BSON\Serializable::bsonSerialize ; Description
+BSON\Timestamp::__construct ; Description
+BSON\Timestamp::__toString ; Description
+BSON\toArray ; Description
+BSON\toJSON ; Description
+BSON\Unserializable::bsonUnserialize ; Description
+BSON\UTCDatetime::toDateTime ; Description
+BSON\UTCDatetime::__construct ; Description
+BSON\UTCDatetime::__toString ; Description
+bson_decode ; 反序列化一个 BSON 对象为 PHP 数组
+bson_encode ; 序列化一个 PHP 变量为 BSON 字符串
+Mongo::connectUtil ; Connects with a database server
+Mongo::getPoolSize ; Get pool size for connection pools
+Mongo::getSlave ; Returns the address being used by this for slaveOkay reads
+Mongo::getSlaveOkay ; Get slaveOkay setting for this connection
+Mongo::poolDebug ; Returns information about all connection pools.
+Mongo::setPoolSize ; Set the size for future connection pools.
+Mongo::setSlaveOkay ; Change slaveOkay setting for this connection
+Mongo::switchSlave ; Choose a new secondary for slaveOkay reads
+Mongo::__construct ; The __construct purpose
+MongoBinData::__construct ; 创建一个新的二进制数据对象
+MongoBinData::__toString ; 二进制数据对象的字符串表达形式。
+MongoClient::close ; 关闭连接
+MongoClient::connect ; 连接到数据库服务器
+MongoClient::dropDB ; 删除一个数据库 [已废弃]
+MongoClient::getConnections ; 返回所有已打开连接的信息
+MongoClient::getHosts ; 更新所有关联主机的状态信息
+MongoClient::getReadPreference ; 获取此连接的读取首选项
+MongoClient::getWriteConcern ; Get the write concern for this connection
+MongoClient::killCursor ; Kills a specific cursor on the server
+MongoClient::listDBs ; 列出所有有效数据库
+MongoClient::selectCollection ; 获取数据库的文档集
+MongoClient::selectDB ; 获取一个数据库
+MongoClient::setReadPreference ; 为该连接设置读取选项
+MongoClient::setWriteConcern ; Set the write concern for this connection
+MongoClient::__construct ; 创建一个新的数据库连接对象
+MongoClient::__get ; 取得一个数据库
+MongoClient::__toString ; 该连接的字符串表达方式
+MongoCode::__construct ; 创建一个新的代码对象
+MongoCode::__toString ; 返回代码的字符串形式
+MongoCollection::aggregate ; Perform an aggregation using the aggregation framework
+MongoCollection::aggregateCursor ; Execute an aggregation pipeline command and retrieve results through a cursor
+MongoCollection::batchInsert ; Inserts multiple documents into this collection
+MongoCollection::count ; 返回集合中的文档数量
+MongoCollection::createDBRef ; 创建一个数据库引用
+MongoCollection::createIndex ; Creates an index on the specified field(s) if it does not already exist.
+MongoCollection::deleteIndex ; Deletes an index from this collection
+MongoCollection::deleteIndexes ; 删除集合的所有索引
+MongoCollection::distinct ; 获取集合里指定键的不同值的列表。
+MongoCollection::drop ; 删除该集合
+MongoCollection::ensureIndex ; Creates an index on the specified field(s) if it does not already exist.
+MongoCollection::find ; 查询该集合，并返回结果集的 MongoCursor
+MongoCollection::findAndModify ; Update a document and return it
+MongoCollection::findOne ; Queries this collection, returning a single element
+MongoCollection::getDBRef ; Fetches the document pointed to by a database reference
+MongoCollection::getIndexInfo ; Returns information about indexes on this collection
+MongoCollection::getName ; 返回这个集合的名称
+MongoCollection::getReadPreference ; Get the read preference for this collection
+MongoCollection::getSlaveOkay ; Get slaveOkay setting for this collection
+MongoCollection::getWriteConcern ; Get the write concern for this collection
+MongoCollection::group ; Performs an operation similar to SQL's GROUP BY command
+MongoCollection::insert ; 插入文档到集合中
+MongoCollection::parallelCollectionScan ; Returns an array of cursors to iterator over a full collection in parallel
+MongoCollection::remove ; 从集合中删除记录
+MongoCollection::save ; 保存一个文档到集合
+MongoCollection::setReadPreference ; Set the read preference for this collection
+MongoCollection::setSlaveOkay ; Change slaveOkay setting for this collection
+MongoCollection::setWriteConcern ; Set the write concern for this database
+MongoCollection::toIndexString ; Converts keys specifying an index to its identifying string
+MongoCollection::update ; Update records based on a given criteria
+MongoCollection::validate ; Validates this collection
+MongoCollection::__construct ; 创建一个新的集合
+MongoCollection::__get ; Gets a collection
+MongoCollection::__toString ; String representation of this collection
+MongoCursor::addOption ; Adds a top-level key/value pair to a query
+MongoCursor::awaitData ; Sets whether this cursor will wait for a while for a tailable cursor to return more data
+MongoCursor::batchSize ; Limits the number of elements returned in one batch.
+MongoCursor::count ; Counts the number of results for this query
+MongoCursor::current ; Returns the current element
+MongoCursor::dead ; Checks if there are results that have not yet been sent from the database
+MongoCursor::doQuery ; Execute the query.
+MongoCursor::explain ; Return an explanation of the query, often useful for optimization and debugging
+MongoCursor::fields ; Sets the fields for a query
+MongoCursor::getNext ; Advances the cursor to the next result, and returns that result
+MongoCursor::getReadPreference ; Get the read preference for this query
+MongoCursor::hasNext ; Checks if there are any more elements in this cursor
+MongoCursor::hint ; Gives the database a hint about the query
+MongoCursor::immortal ; Sets whether this cursor will timeout
+MongoCursor::info ; Gets information about the cursor's creation and iteration
+MongoCursor::key ; Returns the current result's _id, or its index within the result set
+MongoCursor::limit ; Limits the number of results returned
+MongoCursor::maxTimeMS ; Sets a server-side timeout for this query
+MongoCursor::next ; Advances the cursor to the next result, and returns that result
+MongoCursor::partial ; If this query should fetch partial results from mongos if a shard is down
+MongoCursor::reset ; Clears the cursor
+MongoCursor::rewind ; Returns the cursor to the beginning of the result set
+MongoCursor::setFlag ; Sets arbitrary flags in case there is no method available the specific flag
+MongoCursor::setReadPreference ; Set the read preference for this query
+MongoCursor::skip ; Skips a number of results
+MongoCursor::slaveOkay ; Sets whether this query can be done on a secondary [deprecated]
+MongoCursor::snapshot ; Use snapshot mode for the query
+MongoCursor::sort ; Sorts the results by given fields
+MongoCursor::tailable ; Sets whether this cursor will be left open after fetching the last results
+MongoCursor::timeout ; Sets a client-side timeout for this query
+MongoCursor::valid ; Checks if the cursor is reading a valid result.
+MongoCursor::__construct ; Create a new cursor
+MongoCursorException::getHost ; 遇到该错误的服务器的 hostname
+MongoDate::toDateTime ; Returns a DateTime object representing this date
+MongoDate::__construct ; 创建一个新的日期。
+MongoDate::__toString ; 返回该日期的字符串形式的表达
+MongoDB::authenticate ; 登录到数据库
+MongoDB::command ; 执行一条 Mongo 指令
+MongoDB::createCollection ; 创建一个集合
+MongoDB::createDBRef ; 创建数据库引用
+MongoDB::drop ; 丢弃数据库
+MongoDB::dropCollection ; Drops a collection [deprecated]
+MongoDB::execute ; 在数据库服务器上运行JavaScript
+MongoDB::forceError ; Creates a database error
+MongoDB::getCollectionInfo ; Returns information about collections in this database
+MongoDB::getCollectionNames ; Gets an array of names for all collections in this database
+MongoDB::getDBRef ; Fetches the document pointed to by a database reference
+MongoDB::getGridFS ; Fetches toolkit for dealing with files stored in this database
+MongoDB::getProfilingLevel ; Gets this database's profiling level
+MongoDB::getReadPreference ; Get the read preference for this database
+MongoDB::getSlaveOkay ; Get slaveOkay setting for this database
+MongoDB::getWriteConcern ; Get the write concern for this database
+MongoDB::lastError ; Check if there was an error on the most recent db operation performed
+MongoDB::listCollections ; Gets an array of MongoCollection objects for all collections in this database
+MongoDB::prevError ; Checks for the last error thrown during a database operation
+MongoDB::repair ; Repairs and compacts this database
+MongoDB::resetError ; Clears any flagged errors on the database
+MongoDB::selectCollection ; Gets a collection
+MongoDB::setProfilingLevel ; Sets this database's profiling level
+MongoDB::setReadPreference ; Set the read preference for this database
+MongoDB::setSlaveOkay ; Change slaveOkay setting for this database
+MongoDB::setWriteConcern ; Set the write concern for this database
+MongoDB::__construct ; 选择一个数据库
+MongoDB::__get ; Gets a collection
+MongoDB::__toString ; The name of this database
+MongoDB context options ; MongoDB context option listing
+MongoDBRef::create ; 创建一个新的数据库引用
+MongoDBRef::get ; 获取引用所指向的对象
+MongoDBRef::isRef ; 检测数组是否为数据库引用
+MongoDB\Driver\BulkWrite::count ; Count expected roundtrips
+MongoDB\Driver\BulkWrite::delete ; Add a delete operation to the bulk
+MongoDB\Driver\BulkWrite::insert ; Add a insert operation to the bulk
+MongoDB\Driver\BulkWrite::update ; Add an update operation to the bulk
+MongoDB\Driver\BulkWrite::__construct ; Create new BulkWrite
+MongoDB\Driver\Command::__construct ; Construct new Command
+MongoDB\Driver\Cursor::getId ; Returns the CursorId for this cursor
+MongoDB\Driver\Cursor::getServer ; Returns the Server object to which this cursor is attached
+MongoDB\Driver\Cursor::isDead ; Checks if a cursor is still alive
+MongoDB\Driver\Cursor::setTypeMap ; Sets a type map to use for BSON unserialization
+MongoDB\Driver\Cursor::toArray ; Returns an array of all result documents for this cursor
+MongoDB\Driver\Cursor::__construct ; Description
+MongoDB\Driver\CursorId::__construct ; Description
+MongoDB\Driver\CursorId::__toString ; Description
+MongoDB\Driver\Manager::executeBulkWrite ; Execute one or more write operations
+MongoDB\Driver\Manager::executeCommand ; Execute a MongoDB database command
+MongoDB\Driver\Manager::executeDelete ; Convenience method for a single delete operation
+MongoDB\Driver\Manager::executeInsert ; Convenience method for a single insert operation
+MongoDB\Driver\Manager::executeQuery ; Execute a MongoDB query
+MongoDB\Driver\Manager::executeUpdate ; Convenience method for a single update operation
+MongoDB\Driver\Manager::getServers ; Description
+MongoDB\Driver\Manager::selectServer ; Preselect MongoDB node
+MongoDB\Driver\Manager::__construct ; Create new MongoDB Manager
+MongoDB\Driver\Query::__construct ; Construct new Query
+MongoDB\Driver\ReadPreference::__construct ; Description
+MongoDB\Driver\Server::executeBulkWrite ; Description
+MongoDB\Driver\Server::executeCommand ; Description
+MongoDB\Driver\Server::executeQuery ; Description
+MongoDB\Driver\Server::getHost ; Description
+MongoDB\Driver\Server::getInfo ; Description
+MongoDB\Driver\Server::getLatency ; Description
+MongoDB\Driver\Server::getPort ; Description
+MongoDB\Driver\Server::getState ; Description
+MongoDB\Driver\Server::getType ; Description
+MongoDB\Driver\Server::isDelayed ; Description
+MongoDB\Driver\Server::isPassive ; Description
+MongoDB\Driver\Server::__construct ; Description
+MongoDB\Driver\WriteConcern::__construct ; Construct immutable WriteConcern
+MongoDB\Driver\WriteConcernError::getCode ; Description
+MongoDB\Driver\WriteConcernError::getInfo ; Description
+MongoDB\Driver\WriteConcernError::getMessage ; Description
+MongoDB\Driver\WriteError::getCode ; Description
+MongoDB\Driver\WriteError::getIndex ; Description
+MongoDB\Driver\WriteError::getMessage ; Description
+MongoDB\Driver\WriteException::getWriteResult ; Description
+MongoDB\Driver\WriteResult::getDeletedCount ; Description
+MongoDB\Driver\WriteResult::getInfo ; Description
+MongoDB\Driver\WriteResult::getInsertedCount ; Description
+MongoDB\Driver\WriteResult::getMatchedCount ; Description
+MongoDB\Driver\WriteResult::getModifiedCount ; Description
+MongoDB\Driver\WriteResult::getServer ; Description
+MongoDB\Driver\WriteResult::getUpsertedCount ; Description
+MongoDB\Driver\WriteResult::getUpsertedIds ; Description
+MongoDB\Driver\WriteResult::getWriteConcernError ; Description
+MongoDB\Driver\WriteResult::getWriteErrors ; Description
+MongoGridFS::delete ; Remove a file and its chunks from the database
+MongoGridFS::drop ; Drops the files and chunks collections
+MongoGridFS::find ; Queries for files
+MongoGridFS::findOne ; Returns a single file matching the criteria
+MongoGridFS::get ; Retrieve a file from the database
+MongoGridFS::put ; Stores a file in the database
+MongoGridFS::remove ; Remove files and their chunks from the database
+MongoGridFS::storeBytes ; Stores a string of bytes in the database
+MongoGridFS::storeFile ; Stores a file in the database
+MongoGridFS::storeUpload ; Stores an uploaded file in the database
+MongoGridFS::__construct ; Creates new file collections
+MongoGridFSCursor::current ; Returns the current file
+MongoGridFSCursor::getNext ; Return the next file to which this cursor points, and advance the cursor
+MongoGridFSCursor::key ; Returns the current result's filename
+MongoGridFSCursor::__construct ; Create a new cursor
+MongoGridFSFile::getBytes ; Returns this file's contents as a string of bytes
+MongoGridFSFile::getFilename ; Returns this file's filename
+MongoGridFSFile::getResource ; Returns a resource that can be used to read the stored file
+MongoGridFSFile::getSize ; Returns this file's size
+MongoGridFSFile::write ; Writes this file to the filesystem
+MongoGridfsFile::__construct ; Create a new GridFS file
+MongoId::getHostname ; 获取这台机器上 id 所使用的 hostname
+MongoId::getInc ; 返回用于创建 id 所增加的值
+MongoId::getPID ; 获取进程 ID
+MongoId::getTimestamp ; 获取新纪元时间到 id 创建时的秒数。
+MongoId::isValid ; Check if a value is a valid ObjectId
+MongoId::__construct ; 创建一个新的id
+MongoId::__set_state ; 创建一个假的 MongoId
+MongoId::__toString ; 返回该 id 十六进制的表示形式
+MongoInt32::__construct ; 创建一个新的 32位 integer。
+MongoInt32::__toString ; 返回该 32 位 integer 的字符串表示。
+MongoInt64::__construct ; 创建一个新的 64 位 integer。
+MongoInt64::__toString ; 返回该 64 位 integer 的字符串表示形式。
+MongoLog::getCallback ; Gets the previously set callback function
+MongoLog::getLevel ; Gets the level(s) currently being logged
+MongoLog::getModule ; Gets the module(s) currently being logged
+MongoLog::setCallback ; Sets a callback function to be invoked for events
+MongoLog::setLevel ; Sets the level(s) to be logged
+MongoLog::setModule ; Sets the module(s) to be logged
+MongoPool::getSize ; Get pool size for connection pools
+MongoPool::info ; Returns information about all connection pools.
+MongoPool::setSize ; Set the size for future connection pools.
+MongoRegex::__construct ; 创建一个新的正则表达式
+MongoRegex::__toString ; 正则表达式的字符串表达形式
+MongoResultException::getDocument ; 获取完整的结果文档
+MongoTimestamp::__construct ; 创建一个新的时间戳。
+MongoTimestamp::__toString ; 返回时间戳的字符串表示形式
+MongoWriteConcernException::getDocument ; Get the error document
+FANNConnection::getFromNeuron ; Returns the postions of starting neuron.
+FANNConnection::getToNeuron ; Returns the postions of terminating neuron
+FANNConnection::getWeight ; Returns the connection weight
+FANNConnection::setWeight ; Sets the connections weight
+FANNConnection::__construct ; The connection constructor
+fann_cascadetrain_on_data ; Trains on an entire dataset, for a period of time using the Cascade2 training algorithm
+fann_cascadetrain_on_file ; Trains on an entire dataset read from file, for a period of time using the Cascade2 training algorithm.
+fann_clear_scaling_params ; Clears scaling parameters
+fann_copy ; Creates a copy of a fann structure
+fann_create_from_file ; Constructs a backpropagation neural network from a configuration file
+fann_create_shortcut ; Creates a standard backpropagation neural network which is not fully connectected and has shortcut connections
+fann_create_shortcut_array ; Creates a standard backpropagation neural network which is not fully connectected and has shortcut connections
+fann_create_sparse ; Creates a standard backpropagation neural network, which is not fully connected
+fann_create_sparse_array ; Creates a standard backpropagation neural network, which is not fully connected using an array of layer sizes
+fann_create_standard ; Creates a standard fully connected backpropagation neural network
+fann_create_standard_array ; Creates a standard fully connected backpropagation neural network using an array of layer sizes
+fann_create_train ; Creates an empty training data struct
+fann_create_train_from_callback ; Creates the training data struct from a user supplied function
+fann_descale_input ; Scale data in input vector after get it from ann based on previously calculated parameters
+fann_descale_output ; Scale data in output vector after get it from ann based on previously calculated parameters
+fann_descale_train ; Descale input and output data based on previously calculated parameters
+fann_destroy ; Destroys the entire network and properly freeing all the associated memory
+fann_destroy_train ; Destructs the training data
+fann_duplicate_train_data ; Returns an exact copy of a fann train data
+fann_get_activation_function ; Returns the activation function
+fann_get_activation_steepness ; Returns the activation steepness for supplied neuron and layer number
+fann_get_bias_array ; Get the number of bias in each layer in the network
+fann_get_bit_fail ; The number of fail bits
+fann_get_bit_fail_limit ; Returns the bit fail limit used during training
+fann_get_cascade_activation_functions ; Returns the cascade activation functions
+fann_get_cascade_activation_functions_count ; Returns the number of cascade activation functions
+fann_get_cascade_activation_steepnesses ; Returns the cascade activation steepnesses
+fann_get_cascade_activation_steepnesses_count ; The number of activation steepnesses
+fann_get_cascade_candidate_change_fraction ; Returns the cascade candidate change fraction
+fann_get_cascade_candidate_limit ; Return the candidate limit
+fann_get_cascade_candidate_stagnation_epochs ; Returns the number of cascade candidate stagnation epochs
+fann_get_cascade_max_cand_epochs ; Returns the maximum candidate epochs
+fann_get_cascade_max_out_epochs ; Returns the maximum out epochs
+fann_get_cascade_min_cand_epochs ; Returns the minimum candidate epochs
+fann_get_cascade_min_out_epochs ; Returns the minimum out epochs
+fann_get_cascade_num_candidates ; Returns the number of candidates used during training
+fann_get_cascade_num_candidate_groups ; Returns the number of candidate groups
+fann_get_cascade_output_change_fraction ; Returns the cascade output change fraction
+fann_get_cascade_output_stagnation_epochs ; Returns the number of cascade output stagnation epochs
+fann_get_cascade_weight_multiplier ; Returns the weight multiplier
+fann_get_connection_array ; Get connections in the network
+fann_get_connection_rate ; Get the connection rate used when the network was created
+fann_get_errno ; Returns the last error number
+fann_get_errstr ; Returns the last errstr
+fann_get_layer_array ; Get the number of neurons in each layer in the network
+fann_get_learning_momentum ; Returns the learning momentum
+fann_get_learning_rate ; Returns the learning rate
+fann_get_MSE ; Reads the mean square error from the network
+fann_get_network_type ; Get the type of neural network it was created as
+fann_get_num_input ; Get the number of input neurons
+fann_get_num_layers ; Get the number of layers in the neural network
+fann_get_num_output ; Get the number of output neurons
+fann_get_quickprop_decay ; Returns the decay which is a factor that weights should decrease in each iteration during quickprop training
+fann_get_quickprop_mu ; Returns the mu factor
+fann_get_rprop_decrease_factor ; Returns the increase factor used during RPROP training
+fann_get_rprop_delta_max ; Returns the maximum step-size
+fann_get_rprop_delta_min ; Returns the minimum step-size
+fann_get_rprop_delta_zero ; Returns the initial step-size
+fann_get_rprop_increase_factor ; Returns the increase factor used during RPROP training
+fann_get_sarprop_step_error_shift ; Returns the sarprop step error shift
+fann_get_sarprop_step_error_threshold_factor ; Returns the sarprop step error threshold factor
+fann_get_sarprop_temperature ; Returns the sarprop temperature
+fann_get_sarprop_weight_decay_shift ; Returns the sarprop weight decay shift
+fann_get_total_connections ; Get the total number of connections in the entire network
+fann_get_total_neurons ; Get the total number of neurons in the entire network
+fann_get_training_algorithm ; Returns the training algorithm
+fann_get_train_error_function ; Returns the error function used during training
+fann_get_train_stop_function ; Returns the stop function used during training
+fann_init_weights ; Initialize the weights using Widrow + Nguyen&rsquo;s algorithm
+fann_length_train_data ; Returns the number of training patterns in the train data
+fann_merge_train_data ; Merges the train data
+fann_num_input_train_data ; Returns the number of inputs in each of the training patterns in the train data
+fann_num_output_train_data ; Returns the number of outputs in each of the training patterns in the train data
+fann_print_error ; Prints the error string
+fann_randomize_weights ; Give each connection a random weight between min_weight and max_weight
+fann_read_train_from_file ; Reads a file that stores training data
+fann_reset_errno ; Resets the last error number
+fann_reset_errstr ; Resets the last error string
+fann_reset_MSE ; Resets the mean square error from the network
+fann_run ; Will run input through the neural network
+fann_save ; Saves the entire network to a configuration file
+fann_save_train ; Save the training structure to a file
+fann_scale_input ; Scale data in input vector before feed it to ann based on previously calculated parameters
+fann_scale_input_train_data ; Scales the inputs in the training data to the specified range
+fann_scale_output ; Scale data in output vector before feed it to ann based on previously calculated parameters
+fann_scale_output_train_data ; Scales the outputs in the training data to the specified range
+fann_scale_train ; Scale input and output data based on previously calculated parameters
+fann_scale_train_data ; Scales the inputs and outputs in the training data to the specified range
+fann_set_activation_function ; Sets the activation function for supplied neuron and layer
+fann_set_activation_function_hidden ; Sets the activation function for all of the hidden layers
+fann_set_activation_function_layer ; Sets the activation function for all the neurons in the supplied layer.
+fann_set_activation_function_output ; Sets the activation function for the output layer
+fann_set_activation_steepness ; Sets the activation steepness for supplied neuron and layer number
+fann_set_activation_steepness_hidden ; Sets the steepness of the activation steepness for all neurons in the all hidden layers
+fann_set_activation_steepness_layer ; Sets the activation steepness for all of the neurons in the supplied layer number
+fann_set_activation_steepness_output ; Sets the steepness of the activation steepness in the output layer
+fann_set_bit_fail_limit ; Set the bit fail limit used during training
+fann_set_callback ; Sets the callback function for use during training
+fann_set_cascade_activation_functions ; Sets the array of cascade candidate activation functions
+fann_set_cascade_activation_steepnesses ; Sets the array of cascade candidate activation steepnesses
+fann_set_cascade_candidate_change_fraction ; Sets the cascade candidate change fraction
+fann_set_cascade_candidate_limit ; Sets the candidate limit
+fann_set_cascade_candidate_stagnation_epochs ; Sets the number of cascade candidate stagnation epochs
+fann_set_cascade_max_cand_epochs ; Sets the max candidate epochs
+fann_set_cascade_max_out_epochs ; Sets the maximum out epochs
+fann_set_cascade_min_cand_epochs ; Sets the min candidate epochs
+fann_set_cascade_min_out_epochs ; Sets the minimum out epochs
+fann_set_cascade_num_candidate_groups ; Sets the number of candidate groups
+fann_set_cascade_output_change_fraction ; Sets the cascade output change fraction
+fann_set_cascade_output_stagnation_epochs ; Sets the number of cascade output stagnation epochs
+fann_set_cascade_weight_multiplier ; Sets the weight multiplier
+fann_set_error_log ; Sets where the errors are logged to
+fann_set_input_scaling_params ; Calculate input scaling parameters for future use based on training data
+fann_set_learning_momentum ; Sets the learning momentum
+fann_set_learning_rate ; Sets the learning rate
+fann_set_output_scaling_params ; Calculate output scaling parameters for future use based on training data
+fann_set_quickprop_decay ; Sets the quickprop decay factor
+fann_set_quickprop_mu ; Sets the quickprop mu factor
+fann_set_rprop_decrease_factor ; Sets the decrease factor used during RPROP training
+fann_set_rprop_delta_max ; Sets the maximum step-size
+fann_set_rprop_delta_min ; Sets the minimum step-size
+fann_set_rprop_delta_zero ; Sets the initial step-size
+fann_set_rprop_increase_factor ; Sets the increase factor used during RPROP training
+fann_set_sarprop_step_error_shift ; Sets the sarprop step error shift
+fann_set_sarprop_step_error_threshold_factor ; Sets the sarprop step error threshold factor
+fann_set_sarprop_temperature ; Sets the sarprop temperature
+fann_set_sarprop_weight_decay_shift ; Sets the sarprop weight decay shift
+fann_set_scaling_params ; Calculate input and output scaling parameters for future use based on training data
+fann_set_training_algorithm ; Sets the training algorithm
+fann_set_train_error_function ; Sets the error function used during training
+fann_set_train_stop_function ; Sets the stop function used during training
+fann_set_weight ; Set a connection in the network
+fann_set_weight_array ; Set connections in the network
+fann_shuffle_train_data ; Shuffles training data, randomizing the order
+fann_subset_train_data ; Returns an copy of a subset of the train data
+fann_test ; Test with a set of inputs, and a set of desired outputs
+fann_test_data ; Test a set of training data and calculates the MSE for the training data
+fann_train ; Train one iteration with a set of inputs, and a set of desired outputs
+fann_train_epoch ; Train one epoch with a set of training data
+fann_train_on_data ; Trains on an entire dataset for a period of time
+fann_train_on_file ; Trains on an entire dataset, which is read from file, for a period of time
+SVM::crossvalidate ; Test training params on subsets of the training data.
+SVM::getOptions ; Return the current training parameters
+SVM::setOptions ; Set training parameters
+SVM::train ; Create a SVMModel based on training data
+SVM::__construct ; Construct a new SVM object
+SVMModel::checkProbabilityModel ; Returns true if the model has probability information
+SVMModel::getLabels ; Get the labels the model was trained on
+SVMModel::getNrClass ; Returns the number of classes the model was trained with
+SVMModel::getSvmType ; Get the SVM type the model was trained with
+SVMModel::getSvrProbability ; Get the sigma value for regression types
+SVMModel::load ; Load a saved SVM Model
+SVMModel::predict ; Predict a value for previously unseen data
+SVMModel::predict_probability ; Return class probabilities for previous unseen data
+SVMModel::save ; Save a model to a file
+SVMModel::__construct ; Construct a new SVMModel
+GearmanClient::addOptions ; Add client options
+GearmanClient::addServer ; Add a job server to the client
+GearmanClient::addServers ; Add a list of job servers to the client
+GearmanClient::addTask ; Add a task to be run in parallel
+GearmanClient::addTaskBackground ; Add a background task to be run in parallel
+GearmanClient::addTaskHigh ; Add a high priority task to run in parallel
+GearmanClient::addTaskHighBackground ; Add a high priority background task to be run in parallel
+GearmanClient::addTaskLow ; Add a low priority task to run in parallel
+GearmanClient::addTaskLowBackground ; Add a low priority background task to be run in parallel
+GearmanClient::addTaskStatus ; Add a task to get status
+GearmanClient::clearCallbacks ; Clear all task callback functions
+GearmanClient::clone ; Create a copy of a GearmanClient object
+GearmanClient::context ; Get the application context
+GearmanClient::data ; Get the application data (deprecated)
+GearmanClient::do ; Run a single task and return a result [deprecated]
+GearmanClient::doBackground ; Run a task in the background
+GearmanClient::doHigh ; Run a single high priority task
+GearmanClient::doHighBackground ; Run a high priority task in the background
+GearmanClient::doJobHandle ; Get the job handle for the running task
+GearmanClient::doLow ; Run a single low priority task
+GearmanClient::doLowBackground ; Run a low priority task in the background
+GearmanClient::doNormal ; Run a single task and return a result
+GearmanClient::doStatus ; Get the status for the running task
+GearmanClient::echo ; Send data to all job servers to see if they echo it back [deprecated]
+GearmanClient::error ; Returns an error string for the last error encountered.
+GearmanClient::getErrno ; Get an errno value
+GearmanClient::jobStatus ; Get the status of a background job
+GearmanClient::ping ; Send data to all job servers to see if they echo it back
+GearmanClient::removeOptions ; Remove client options
+GearmanClient::returnCode ; Get the last Gearman return code
+GearmanClient::runTasks ; Run a list of tasks in parallel
+GearmanClient::setClientCallback ; Callback function when there is a data packet for a task (deprecated)
+GearmanClient::setCompleteCallback ; Set a function to be called on task completion
+GearmanClient::setContext ; Set application context
+GearmanClient::setCreatedCallback ; Set a callback for when a task is queued
+GearmanClient::setData ; Set application data (deprecated)
+GearmanClient::setDataCallback ; Callback function when there is a data packet for a task
+GearmanClient::setExceptionCallback ; Set a callback for worker exceptions
+GearmanClient::setFailCallback ; Set callback for job failure
+GearmanClient::setOptions ; Set client options
+GearmanClient::setStatusCallback ; Set a callback for collecting task status
+GearmanClient::setTimeout ; Set socket I/O activity timeout
+GearmanClient::setWarningCallback ; Set a callback for worker warnings
+GearmanClient::setWorkloadCallback ; Set a callback for accepting incremental data updates
+GearmanClient::timeout ; Get current socket I/O activity timeout value
+GearmanClient::__construct ; Create a GearmanClient instance
+GearmanJob::complete ; Send the result and complete status (deprecated)
+GearmanJob::data ; Send data for a running job (deprecated)
+GearmanJob::exception ; Send exception for running job (deprecated)
+GearmanJob::fail ; Send fail status (deprecated)
+GearmanJob::functionName ; Get function name
+GearmanJob::handle ; Get the job handle
+GearmanJob::returnCode ; Get last return code
+GearmanJob::sendComplete ; Send the result and complete status
+GearmanJob::sendData ; Send data for a running job
+GearmanJob::sendException ; Send exception for running job (exception)
+GearmanJob::sendFail ; Send fail status
+GearmanJob::sendStatus ; Send status
+GearmanJob::sendWarning ; Send a warning
+GearmanJob::setReturn ; Set a return value
+GearmanJob::status ; Send status (deprecated)
+GearmanJob::unique ; Get the unique identifier
+GearmanJob::warning ; Send a warning (deprecated)
+GearmanJob::workload ; Get workload
+GearmanJob::workloadSize ; Get size of work load
+GearmanJob::__construct ; Create a GearmanJob instance
+GearmanTask::create ; Create a task (deprecated)
+GearmanTask::data ; Get data returned for a task
+GearmanTask::dataSize ; Get the size of returned data
+GearmanTask::function ; Get associated function name (deprecated)
+GearmanTask::functionName ; Get associated function name
+GearmanTask::isKnown ; Determine if task is known
+GearmanTask::isRunning ; Test whether the task is currently running
+GearmanTask::jobHandle ; Get the job handle
+GearmanTask::recvData ; Read work or result data into a buffer for a task
+GearmanTask::returnCode ; Get the last return code
+GearmanTask::sendData ; Send data for a task (deprecated)
+GearmanTask::sendWorkload ; Send data for a task
+GearmanTask::taskDenominator ; Get completion percentage denominator
+GearmanTask::taskNumerator ; Get completion percentage numerator
+GearmanTask::unique ; Get the unique identifier for a task
+GearmanTask::uuid ; Get the unique identifier for a task (deprecated)
+GearmanTask::__construct ; Create a GearmanTask instance
+GearmanWorker::addFunction ; Register and add callback function
+GearmanWorker::addOptions ; Add worker options
+GearmanWorker::addServer ; Add a job server
+GearmanWorker::addServers ; Add job servers
+GearmanWorker::clone ; Create a copy of the worker
+GearmanWorker::echo ; Test job server response
+GearmanWorker::error ; Get the last error encountered
+GearmanWorker::getErrno ; Get errno
+GearmanWorker::options ; Get worker options
+GearmanWorker::register ; Register a function with the job server
+GearmanWorker::removeOptions ; Remove worker options
+GearmanWorker::returnCode ; Get last Gearman return code
+GearmanWorker::setId ; Give the worker an identifier so it can be tracked when asking gearmand for the list of available workers.
+GearmanWorker::setOptions ; Set worker options
+GearmanWorker::setTimeout ; Set socket I/O activity timeout
+GearmanWorker::timeout ; Get socket I/O activity timeout
+GearmanWorker::unregister ; Unregister a function name with the job servers
+GearmanWorker::unregisterAll ; Unregister all function names with the job servers
+GearmanWorker::wait ; Wait for activity from one of the job servers
+GearmanWorker::work ; Wait for and perform jobs
+GearmanWorker::__construct ; Create a GearmanWorker instance
+Imagick::adaptiveBlurImage ; Adds adaptive blur filter to image
+Imagick::adaptiveResizeImage ; Adaptively resize image with data dependent triangulation
+Imagick::adaptiveSharpenImage ; Adaptively sharpen the image
+Imagick::adaptiveThresholdImage ; Selects a threshold for each pixel based on a range of intensity
+Imagick::addImage ; Adds new image to Imagick object image list
+Imagick::addNoiseImage ; Adds random noise to the image
+Imagick::affineTransformImage ; Transforms an image
+Imagick::animateImages ; Animates an image or images
+Imagick::annotateImage ; Annotates an image with text
+Imagick::appendImages ; Append a set of images
+Imagick::autoLevelImage ; Description
+Imagick::averageImages ; Average a set of images
+Imagick::blackThresholdImage ; Forces all pixels below the threshold into black
+Imagick::blueShiftImage ; Description
+Imagick::blurImage ; Adds blur filter to image
+Imagick::borderImage ; Surrounds the image with a border
+Imagick::brightnessContrastImage ; Description
+Imagick::charcoalImage ; Simulates a charcoal drawing
+Imagick::chopImage ; Removes a region of an image and trims
+Imagick::clampImage ; Description
+Imagick::clear ; Clears all resources associated to Imagick object
+Imagick::clipImage ; Clips along the first path from the 8BIM profile
+Imagick::clipImagePath ; Description
+Imagick::clipPathImage ; Clips along the named paths from the 8BIM profile
+Imagick::clone ; Makes an exact copy of the Imagick object
+Imagick::clutImage ; Replaces colors in the image
+Imagick::coalesceImages ; Composites a set of images
+Imagick::colorFloodfillImage ; Changes the color value of any pixel that matches target
+Imagick::colorizeImage ; Blends the fill color with the image
+Imagick::colorMatrixImage ; Description
+Imagick::combineImages ; Combines one or more images into a single image
+Imagick::commentImage ; Adds a comment to your image
+Imagick::compareImageChannels ; Returns the difference in one or more images
+Imagick::compareImageLayers ; Returns the maximum bounding region between images
+Imagick::compareImages ; Compares an image to a reconstructed image
+Imagick::compositeImage ; 把一张图合并到一张图
+Imagick::contrastImage ; Change the contrast of the image
+Imagick::contrastStretchImage ; Enhances the contrast of a color image
+Imagick::convolveImage ; Applies a custom convolution kernel to the image
+Imagick::count ; Description
+Imagick::cropImage ; 截图图片的一块区域
+Imagick::cropThumbnailImage ; 创建缩略图
+Imagick::current ; Returns a reference to the current Imagick object
+Imagick::cycleColormapImage ; Displaces an image's colormap
+Imagick::decipherImage ; Deciphers an image
+Imagick::deconstructImages ; Returns certain pixel differences between images
+Imagick::deleteImageArtifact ; Delete image artifact
+Imagick::deleteImageProperty ; Description
+Imagick::deskewImage ; Removes skew from the image
+Imagick::despeckleImage ; Reduces the speckle noise in an image
+Imagick::destroy ; Destroys the Imagick object
+Imagick::displayImage ; Displays an image
+Imagick::displayImages ; Displays an image or image sequence
+Imagick::distortImage ; Distorts an image using various distortion methods
+Imagick::drawImage ; 把 ImagickDraw 对象渲染到当前图片上
+Imagick::edgeImage ; Enhance edges within the image
+Imagick::embossImage ; Returns a grayscale image with a three-dimensional effect
+Imagick::encipherImage ; Enciphers an image
+Imagick::enhanceImage ; Improves the quality of a noisy image
+Imagick::equalizeImage ; Equalizes the image histogram
+Imagick::evaluateImage ; Applies an expression to an image
+Imagick::exportImagePixels ; Exports raw image pixels
+Imagick::extentImage ; Set image size
+Imagick::filter ; Description
+Imagick::flattenImages ; Merges a sequence of images
+Imagick::flipImage ; Creates a vertical mirror image
+Imagick::floodFillPaintImage ; Changes the color value of any pixel that matches target
+Imagick::flopImage ; Creates a horizontal mirror image
+Imagick::forwardFourierTransformImage ; Description
+Imagick::frameImage ; Adds a simulated three-dimensional border
+Imagick::functionImage ; Applies a function on the image
+Imagick::fxImage ; Evaluate expression for each pixel in the image
+Imagick::gammaImage ; Gamma-corrects an image
+Imagick::gaussianBlurImage ; Blurs an image
+Imagick::getColorspace ; Gets the colorspace
+Imagick::getCompression ; Gets the object compression type
+Imagick::getCompressionQuality ; Gets the object compression quality
+Imagick::getCopyright ; Returns the ImageMagick API copyright as a string
+Imagick::getFilename ; The filename associated with an image sequence
+Imagick::getFont ; Gets font
+Imagick::getFormat ; Returns the format of the Imagick object
+Imagick::getGravity ; Gets the gravity
+Imagick::getHomeURL ; Returns the ImageMagick home URL
+Imagick::getImage ; Returns a new Imagick object
+Imagick::getImageAlphaChannel ; 获取图像的 alpha 通道
+Imagick::getImageArtifact ; Get image artifact
+Imagick::getImageAttribute ; Description
+Imagick::getImageBackgroundColor ; Returns the image background color
+Imagick::getImageBlob ; Returns the image sequence as a blob
+Imagick::getImageBluePrimary ; Returns the chromaticy blue primary point
+Imagick::getImageBorderColor ; Returns the image border color
+Imagick::getImageChannelDepth ; Gets the depth for a particular image channel
+Imagick::getImageChannelDistortion ; Compares image channels of an image to a reconstructed image
+Imagick::getImageChannelDistortions ; Gets channel distortions
+Imagick::getImageChannelExtrema ; Gets the extrema for one or more image channels
+Imagick::getImageChannelKurtosis ; The getImageChannelKurtosis purpose
+Imagick::getImageChannelMean ; Gets the mean and standard deviation
+Imagick::getImageChannelRange ; Gets channel range
+Imagick::getImageChannelStatistics ; Returns statistics for each channel in the image
+Imagick::getImageClipMask ; Gets image clip mask
+Imagick::getImageColormapColor ; Returns the color of the specified colormap index
+Imagick::getImageColors ; Gets the number of unique colors in the image
+Imagick::getImageColorspace ; Gets the image colorspace
+Imagick::getImageCompose ; Returns the composite operator associated with the image
+Imagick::getImageCompression ; Gets the current image's compression type
+Imagick::getImageCompressionQuality ; Gets the current image's compression quality
+Imagick::getImageDelay ; Gets the image delay
+Imagick::getImageDepth ; Gets the image depth
+Imagick::getImageDispose ; Gets the image disposal method
+Imagick::getImageDistortion ; Compares an image to a reconstructed image
+Imagick::getImageExtrema ; Gets the extrema for the image
+Imagick::getImageFilename ; Returns the filename of a particular image in a sequence
+Imagick::getImageFormat ; Returns the format of a particular image in a sequence
+Imagick::getImageGamma ; Gets the image gamma
+Imagick::getImageGeometry ; Gets the width and height as an associative array
+Imagick::getImageGravity ; Gets the image gravity
+Imagick::getImageGreenPrimary ; Returns the chromaticy green primary point
+Imagick::getImageHeight ; Returns the image height
+Imagick::getImageHistogram ; Gets the image histogram
+Imagick::getImageIndex ; Gets the index of the current active image
+Imagick::getImageInterlaceScheme ; Gets the image interlace scheme
+Imagick::getImageInterpolateMethod ; Returns the interpolation method
+Imagick::getImageIterations ; Gets the image iterations
+Imagick::getImageLength ; Returns the image length in bytes
+Imagick::getImageMagickLicense ; Returns a string containing the ImageMagick license
+Imagick::getImageMatte ; Return if the image has a matte channel
+Imagick::getImageMatteColor ; Returns the image matte color
+Imagick::getImageMimeType ; Description
+Imagick::getImageOrientation ; Gets the image orientation
+Imagick::getImagePage ; Returns the page geometry
+Imagick::getImagePixelColor ; Returns the color of the specified pixel
+Imagick::getImageProfile ; Returns the named image profile
+Imagick::getImageProfiles ; Returns the image profiles
+Imagick::getImageProperties ; Returns the image properties
+Imagick::getImageProperty ; Returns the named image property
+Imagick::getImageRedPrimary ; Returns the chromaticity red primary point
+Imagick::getImageRegion ; Extracts a region of the image
+Imagick::getImageRenderingIntent ; Gets the image rendering intent
+Imagick::getImageResolution ; 获取图像的x,y轴分辨率
+Imagick::getImagesBlob ; Returns all image sequences as a blob
+Imagick::getImageScene ; Gets the image scene
+Imagick::getImageSignature ; Generates an SHA-256 message digest
+Imagick::getImageSize ; Returns the image length in bytes
+Imagick::getImageTicksPerSecond ; Gets the image ticks-per-second
+Imagick::getImageTotalInkDensity ; Gets the image total ink density
+Imagick::getImageType ; Gets the potential image type
+Imagick::getImageUnits ; 获取图像的分辨率单位
+Imagick::getImageVirtualPixelMethod ; Returns the virtual pixel method
+Imagick::getImageWhitePoint ; Returns the chromaticity white point
+Imagick::getImageWidth ; Returns the image width
+Imagick::getInterlaceScheme ; Gets the object interlace scheme
+Imagick::getIteratorIndex ; Gets the index of the current active image
+Imagick::getNumberImages ; Returns the number of images in the object
+Imagick::getOption ; Returns a value associated with the specified key
+Imagick::getPackageName ; Returns the ImageMagick package name
+Imagick::getPage ; Returns the page geometry
+Imagick::getPixelIterator ; Returns a MagickPixelIterator
+Imagick::getPixelRegionIterator ; Get an ImagickPixelIterator for an image section
+Imagick::getPointSize ; Gets point size
+Imagick::getQuantum ; Description
+Imagick::getQuantumDepth ; Gets the quantum depth
+Imagick::getQuantumRange ; Returns the Imagick quantum range
+Imagick::getRegistry ; Description
+Imagick::getReleaseDate ; Returns the ImageMagick release date
+Imagick::getResource ; Returns the specified resource's memory usage
+Imagick::getResourceLimit ; Returns the specified resource limit
+Imagick::getSamplingFactors ; Gets the horizontal and vertical sampling factor
+Imagick::getSize ; Returns the size associated with the Imagick object
+Imagick::getSizeOffset ; Returns the size offset
+Imagick::getVersion ; Returns the ImageMagick API version
+Imagick::haldClutImage ; Replaces colors in the image
+Imagick::hasNextImage ; Checks if the object has more images
+Imagick::hasPreviousImage ; Checks if the object has a previous image
+Imagick::identifyFormat ; Description
+Imagick::identifyImage ; Identifies an image and fetches attributes
+Imagick::implodeImage ; Creates a new image as a copy
+Imagick::importImagePixels ; Imports image pixels
+Imagick::inverseFourierTransformImage ; Description
+Imagick::labelImage ; Adds a label to an image
+Imagick::levelImage ; Adjusts the levels of an image
+Imagick::linearStretchImage ; Stretches with saturation the image intensity
+Imagick::liquidRescaleImage ; Animates an image or images
+Imagick::listRegistry ; Description
+Imagick::magnifyImage ; Scales an image proportionally 2x
+Imagick::mapImage ; Replaces the colors of an image with the closest color from a reference image.
+Imagick::matteFloodfillImage ; Changes the transparency value of a color
+Imagick::medianFilterImage ; Applies a digital filter
+Imagick::mergeImageLayers ; Merges image layers
+Imagick::minifyImage ; Scales an image proportionally to half its size
+Imagick::modulateImage ; Control the brightness, saturation, and hue
+Imagick::montageImage ; Creates a composite image
+Imagick::morphImages ; Method morphs a set of images
+Imagick::morphology ; Description
+Imagick::mosaicImages ; Forms a mosaic from images
+Imagick::motionBlurImage ; Simulates motion blur
+Imagick::negateImage ; Negates the colors in the reference image
+Imagick::newImage ; 创建一张图片
+Imagick::newPseudoImage ; Creates a new image
+Imagick::nextImage ; Moves to the next image
+Imagick::normalizeImage ; Enhances the contrast of a color image
+Imagick::oilPaintImage ; Simulates an oil painting
+Imagick::opaquePaintImage ; Changes the color value of any pixel that matches target
+Imagick::optimizeImageLayers ; Removes repeated portions of images to optimize
+Imagick::orderedPosterizeImage ; Performs an ordered dither
+Imagick::paintFloodfillImage ; Changes the color value of any pixel that matches target
+Imagick::paintOpaqueImage ; Change any pixel that matches color
+Imagick::paintTransparentImage ; Changes any pixel that matches color with the color defined by fill
+Imagick::pingImage ; Fetch basic attributes about the image
+Imagick::pingImageBlob ; Quickly fetch attributes
+Imagick::pingImageFile ; Get basic image attributes in a lightweight manner
+Imagick::polaroidImage ; Simulates a Polaroid picture
+Imagick::posterizeImage ; Reduces the image to a limited number of color level
+Imagick::previewImages ; Quickly pin-point appropriate parameters for image processing
+Imagick::previousImage ; Move to the previous image in the object
+Imagick::profileImage ; Adds or removes a profile from an image
+Imagick::quantizeImage ; Analyzes the colors within a reference image
+Imagick::quantizeImages ; Analyzes the colors within a sequence of images
+Imagick::queryFontMetrics ; Returns an array representing the font metrics
+Imagick::queryFonts ; Returns the configured fonts
+Imagick::queryFormats ; Returns formats supported by Imagick
+Imagick::radialBlurImage ; Radial blurs an image
+Imagick::raiseImage ; Creates a simulated 3d button-like effect
+Imagick::randomThresholdImage ; Creates a high-contrast, two-color image
+Imagick::readImage ; Reads image from filename
+Imagick::readImageBlob ; 从二进制字符串里读取图片
+Imagick::readImageFile ; Reads image from open filehandle
+Imagick::readimages ; Description
+Imagick::recolorImage ; Recolors image
+Imagick::reduceNoiseImage ; Smooths the contours of an image
+Imagick::remapImage ; Remaps image colors
+Imagick::removeImage ; Removes an image from the image list
+Imagick::removeImageProfile ; Removes the named image profile and returns it
+Imagick::render ; Renders all preceding drawing commands
+Imagick::resampleImage ; Resample image to desired resolution
+Imagick::resetImagePage ; Reset image page
+Imagick::resizeImage ; Scales an image
+Imagick::rollImage ; Offsets an image
+Imagick::rotateImage ; Rotates an image
+Imagick::rotationalBlurImage ; Description
+Imagick::roundCorners ; Rounds image corners
+Imagick::sampleImage ; Scales an image with pixel sampling
+Imagick::scaleImage ; Scales the size of an image
+Imagick::segmentImage ; Segments an image
+Imagick::selectiveBlurImage ; Description
+Imagick::separateImageChannel ; Separates a channel from the image
+Imagick::sepiaToneImage ; Sepia tones an image
+Imagick::setBackgroundColor ; Sets the object's default background color
+Imagick::setColorspace ; Set colorspace
+Imagick::setCompression ; Sets the object's default compression type
+Imagick::setCompressionQuality ; Sets the object's default compression quality
+Imagick::setFilename ; Sets the filename before you read or write the image
+Imagick::setFirstIterator ; Sets the Imagick iterator to the first image
+Imagick::setFont ; Sets font
+Imagick::setFormat ; Sets the format of the Imagick object
+Imagick::setGravity ; Sets the gravity
+Imagick::setImage ; Replaces image in the object
+Imagick::setImageAlphaChannel ; Sets image alpha channel
+Imagick::setImageArtifact ; Set image artifact
+Imagick::setImageAttribute ; Description
+Imagick::setImageBackgroundColor ; Sets the image background color
+Imagick::setImageBias ; Sets the image bias for any method that convolves an image
+Imagick::setImageBiasQuantum ; Description
+Imagick::setImageBluePrimary ; Sets the image chromaticity blue primary point
+Imagick::setImageBorderColor ; Sets the image border color
+Imagick::setImageChannelDepth ; Sets the depth of a particular image channel
+Imagick::setImageClipMask ; Sets image clip mask
+Imagick::setImageColormapColor ; Sets the color of the specified colormap index
+Imagick::setImageColorspace ; Sets the image colorspace
+Imagick::setImageCompose ; Sets the image composite operator
+Imagick::setImageCompression ; 设置图片压缩的类型
+Imagick::setImageCompressionQuality ; 设置图片压缩的质量
+Imagick::setImageDelay ; Sets the image delay
+Imagick::setImageDepth ; Sets the image depth
+Imagick::setImageDispose ; Sets the image disposal method
+Imagick::setImageExtent ; Sets the image size
+Imagick::setImageFilename ; Sets the filename of a particular image
+Imagick::setImageFormat ; 为图片设置指定的格式
+Imagick::setImageGamma ; Sets the image gamma
+Imagick::setImageGravity ; Sets the image gravity
+Imagick::setImageGreenPrimary ; Sets the image chromaticity green primary point
+Imagick::setImageIndex ; Set the iterator position
+Imagick::setImageInterlaceScheme ; Sets the image compression
+Imagick::setImageInterpolateMethod ; Sets the image interpolate pixel method
+Imagick::setImageIterations ; Sets the image iterations
+Imagick::setImageMatte ; Sets the image matte channel
+Imagick::setImageMatteColor ; Sets the image matte color
+Imagick::setImageOpacity ; Sets the image opacity level
+Imagick::setImageOrientation ; Sets the image orientation
+Imagick::setImagePage ; Sets the page geometry of the image
+Imagick::setImageProfile ; Adds a named profile to the Imagick object
+Imagick::setImageProperty ; Sets an image property
+Imagick::setImageRedPrimary ; Sets the image chromaticity red primary point
+Imagick::setImageRenderingIntent ; Sets the image rendering intent
+Imagick::setImageResolution ; Sets the image resolution
+Imagick::setImageScene ; Sets the image scene
+Imagick::setImageTicksPerSecond ; Sets the image ticks-per-second
+Imagick::setImageType ; Sets the image type
+Imagick::setImageUnits ; Sets the image units of resolution
+Imagick::setImageVirtualPixelMethod ; Sets the image virtual pixel method
+Imagick::setImageWhitePoint ; Sets the image chromaticity white point
+Imagick::setInterlaceScheme ; Sets the image compression
+Imagick::setIteratorIndex ; Set the iterator position
+Imagick::setLastIterator ; Sets the Imagick iterator to the last image
+Imagick::setOption ; Set an option
+Imagick::setPage ; Sets the page geometry of the Imagick object
+Imagick::setPointSize ; Sets point size
+Imagick::setProgressMonitor ; Description
+Imagick::setRegistry ; Description
+Imagick::setResolution ; Sets the image resolution
+Imagick::setResourceLimit ; Sets the limit for a particular resource in megabytes
+Imagick::setSamplingFactors ; Sets the image sampling factors
+Imagick::setSize ; Sets the size of the Imagick object
+Imagick::setSizeOffset ; Sets the size and offset of the Imagick object
+Imagick::setType ; Sets the image type attribute
+Imagick::shadeImage ; Creates a 3D effect
+Imagick::shadowImage ; Simulates an image shadow
+Imagick::sharpenImage ; Sharpens an image
+Imagick::shaveImage ; Shaves pixels from the image edges
+Imagick::shearImage ; Creating a parallelogram
+Imagick::sigmoidalContrastImage ; Adjusts the contrast of an image
+Imagick::sketchImage ; Simulates a pencil sketch
+Imagick::smushImages ; Description
+Imagick::solarizeImage ; Applies a solarizing effect to the image
+Imagick::sparseColorImage ; Interpolates colors
+Imagick::spliceImage ; Splices a solid color into the image
+Imagick::spreadImage ; Randomly displaces each pixel in a block
+Imagick::statisticImage ; Description
+Imagick::steganoImage ; Hides a digital watermark within the image
+Imagick::stereoImage ; Composites two images
+Imagick::stripImage ; 去掉图片的所有配置和设置
+Imagick::subImageMatch ; Description
+Imagick::swirlImage ; Swirls the pixels about the center of the image
+Imagick::textureImage ; Repeatedly tiles the texture image
+Imagick::thresholdImage ; Changes the value of individual pixels based on a threshold
+Imagick::thumbnailImage ; Changes the size of an image
+Imagick::tintImage ; Applies a color vector to each pixel in the image
+Imagick::transformImage ; Convenience method for setting crop size and the image geometry
+Imagick::transformImageColorspace ; Transforms an image to a new colorspace.
+Imagick::transparentPaintImage ; Paints pixels transparent
+Imagick::transposeImage ; Creates a vertical mirror image
+Imagick::transverseImage ; Creates a horizontal mirror image
+Imagick::trimImage ; Remove edges from the image
+Imagick::uniqueImageColors ; Discards all but one of any pixel color
+Imagick::unsharpMaskImage ; Sharpens an image
+Imagick::valid ; Checks if the current item is valid
+Imagick::vignetteImage ; Adds vignette filter to the image
+Imagick::waveImage ; Applies wave filter to the image
+Imagick::whiteThresholdImage ; Force all pixels above the threshold into white
+Imagick::writeImage ; 把图片写入指定的文件
+Imagick::writeImageFile ; Writes an image to a filehandle
+Imagick::writeImages ; Writes an image or image sequence
+Imagick::writeImagesFile ; Writes frames to a filehandle
+Imagick::__construct ; The Imagick constructor
+Imagick::__toString ; Returns the image as a string.
+ImagickDraw::affine ; Adjusts the current affine transformation matrix
+ImagickDraw::annotation ; Draws text on the image
+ImagickDraw::arc ; Draws an arc
+ImagickDraw::bezier ; Draws a bezier curve
+ImagickDraw::circle ; Draws a circle
+ImagickDraw::clear ; Clears the ImagickDraw
+ImagickDraw::clone ; Makes an exact copy of the specified ImagickDraw object
+ImagickDraw::color ; Draws color on image
+ImagickDraw::comment ; Adds a comment
+ImagickDraw::composite ; Composites an image onto the current image
+ImagickDraw::destroy ; Frees all associated resources
+ImagickDraw::ellipse ; Draws an ellipse on the image
+ImagickDraw::getClipPath ; Obtains the current clipping path ID
+ImagickDraw::getClipRule ; Returns the current polygon fill rule
+ImagickDraw::getClipUnits ; Returns the interpretation of clip path units
+ImagickDraw::getFillColor ; Returns the fill color
+ImagickDraw::getFillOpacity ; Returns the opacity used when drawing
+ImagickDraw::getFillRule ; Returns the fill rule
+ImagickDraw::getFont ; Returns the font
+ImagickDraw::getFontFamily ; Returns the font family
+ImagickDraw::getFontSize ; Returns the font pointsize
+ImagickDraw::getFontStretch ; Description
+ImagickDraw::getFontStyle ; Returns the font style
+ImagickDraw::getFontWeight ; Returns the font weight
+ImagickDraw::getGravity ; Returns the text placement gravity
+ImagickDraw::getStrokeAntialias ; Returns the current stroke antialias setting
+ImagickDraw::getStrokeColor ; Returns the color used for stroking object outlines
+ImagickDraw::getStrokeDashArray ; Returns an array representing the pattern of dashes and gaps used to stroke paths
+ImagickDraw::getStrokeDashOffset ; Returns the offset into the dash pattern to start the dash
+ImagickDraw::getStrokeLineCap ; Returns the shape to be used at the end of open subpaths when they are stroked
+ImagickDraw::getStrokeLineJoin ; Returns the shape to be used at the corners of paths when they are stroked
+ImagickDraw::getStrokeMiterLimit ; Returns the stroke miter limit
+ImagickDraw::getStrokeOpacity ; Returns the opacity of stroked object outlines
+ImagickDraw::getStrokeWidth ; Returns the width of the stroke used to draw object outlines
+ImagickDraw::getTextAlignment ; Returns the text alignment
+ImagickDraw::getTextAntialias ; Returns the current text antialias setting
+ImagickDraw::getTextDecoration ; Returns the text decoration
+ImagickDraw::getTextEncoding ; Returns the code set used for text annotations
+ImagickDraw::getTextInterlineSpacing ; Description
+ImagickDraw::getTextInterwordSpacing ; Description
+ImagickDraw::getTextKerning ; Description
+ImagickDraw::getTextUnderColor ; Returns the text under color
+ImagickDraw::getVectorGraphics ; Returns a string containing vector graphics
+ImagickDraw::line ; Draws a line
+ImagickDraw::matte ; Paints on the image's opacity channel
+ImagickDraw::pathClose ; Adds a path element to the current path
+ImagickDraw::pathCurveToAbsolute ; Draws a cubic Bezier curve
+ImagickDraw::pathCurveToQuadraticBezierAbsolute ; Draws a quadratic Bezier curve
+ImagickDraw::pathCurveToQuadraticBezierRelative ; Draws a quadratic Bezier curve
+ImagickDraw::pathCurveToQuadraticBezierSmoothAbsolute ; Draws a quadratic Bezier curve
+ImagickDraw::pathCurveToQuadraticBezierSmoothRelative ; Draws a quadratic Bezier curve
+ImagickDraw::pathCurveToRelative ; Draws a cubic Bezier curve
+ImagickDraw::pathCurveToSmoothAbsolute ; Draws a cubic Bezier curve
+ImagickDraw::pathCurveToSmoothRelative ; Draws a cubic Bezier curve
+ImagickDraw::pathEllipticArcAbsolute ; Draws an elliptical arc
+ImagickDraw::pathEllipticArcRelative ; Draws an elliptical arc
+ImagickDraw::pathFinish ; Terminates the current path
+ImagickDraw::pathLineToAbsolute ; Draws a line path
+ImagickDraw::pathLineToHorizontalAbsolute ; Draws a horizontal line path
+ImagickDraw::pathLineToHorizontalRelative ; Draws a horizontal line
+ImagickDraw::pathLineToRelative ; Draws a line path
+ImagickDraw::pathLineToVerticalAbsolute ; Draws a vertical line
+ImagickDraw::pathLineToVerticalRelative ; Draws a vertical line path
+ImagickDraw::pathMoveToAbsolute ; Starts a new sub-path
+ImagickDraw::pathMoveToRelative ; Starts a new sub-path
+ImagickDraw::pathStart ; Declares the start of a path drawing list
+ImagickDraw::point ; Draws a point
+ImagickDraw::polygon ; Draws a polygon
+ImagickDraw::polyline ; Draws a polyline
+ImagickDraw::pop ; Destroys the current ImagickDraw in the stack, and returns to the previously pushed ImagickDraw
+ImagickDraw::popClipPath ; Terminates a clip path definition
+ImagickDraw::popDefs ; Terminates a definition list
+ImagickDraw::popPattern ; Terminates a pattern definition
+ImagickDraw::push ; Clones the current ImagickDraw and pushes it to the stack
+ImagickDraw::pushClipPath ; Starts a clip path definition
+ImagickDraw::pushDefs ; Indicates that following commands create named elements for early processing
+ImagickDraw::pushPattern ; Indicates that subsequent commands up to a ImagickDraw::opPattern() command comprise the definition of a named pattern
+ImagickDraw::rectangle ; Draws a rectangle
+ImagickDraw::render ; Renders all preceding drawing commands onto the image
+ImagickDraw::resetVectorGraphics ; Description
+ImagickDraw::rotate ; Applies the specified rotation to the current coordinate space
+ImagickDraw::roundRectangle ; Draws a rounded rectangle
+ImagickDraw::scale ; Adjusts the scaling factor
+ImagickDraw::setClipPath ; Associates a named clipping path with the image
+ImagickDraw::setClipRule ; Set the polygon fill rule to be used by the clipping path
+ImagickDraw::setClipUnits ; Sets the interpretation of clip path units
+ImagickDraw::setFillAlpha ; Sets the opacity to use when drawing using the fill color or fill texture
+ImagickDraw::setFillColor ; Sets the fill color to be used for drawing filled objects
+ImagickDraw::setFillOpacity ; Sets the opacity to use when drawing using the fill color or fill texture
+ImagickDraw::setFillPatternURL ; Sets the URL to use as a fill pattern for filling objects
+ImagickDraw::setFillRule ; Sets the fill rule to use while drawing polygons
+ImagickDraw::setFont ; Sets the fully-specified font to use when annotating with text
+ImagickDraw::setFontFamily ; Sets the font family to use when annotating with text
+ImagickDraw::setFontSize ; Sets the font pointsize to use when annotating with text
+ImagickDraw::setFontStretch ; Sets the font stretch to use when annotating with text
+ImagickDraw::setFontStyle ; Sets the font style to use when annotating with text
+ImagickDraw::setFontWeight ; Sets the font weight
+ImagickDraw::setGravity ; Sets the text placement gravity
+ImagickDraw::setResolution ; Description
+ImagickDraw::setStrokeAlpha ; Specifies the opacity of stroked object outlines
+ImagickDraw::setStrokeAntialias ; Controls whether stroked outlines are antialiased
+ImagickDraw::setStrokeColor ; Sets the color used for stroking object outlines
+ImagickDraw::setStrokeDashArray ; Specifies the pattern of dashes and gaps used to stroke paths
+ImagickDraw::setStrokeDashOffset ; Specifies the offset into the dash pattern to start the dash
+ImagickDraw::setStrokeLineCap ; Specifies the shape to be used at the end of open subpaths when they are stroked
+ImagickDraw::setStrokeLineJoin ; Specifies the shape to be used at the corners of paths when they are stroked
+ImagickDraw::setStrokeMiterLimit ; Specifies the miter limit
+ImagickDraw::setStrokeOpacity ; Specifies the opacity of stroked object outlines
+ImagickDraw::setStrokePatternURL ; Sets the pattern used for stroking object outlines
+ImagickDraw::setStrokeWidth ; Sets the width of the stroke used to draw object outlines
+ImagickDraw::setTextAlignment ; Specifies a text alignment
+ImagickDraw::setTextAntialias ; Controls whether text is antialiased
+ImagickDraw::setTextDecoration ; Specifies a decoration
+ImagickDraw::setTextEncoding ; Specifies the text code set
+ImagickDraw::setTextInterlineSpacing ; Description
+ImagickDraw::setTextInterwordSpacing ; Description
+ImagickDraw::setTextKerning ; Description
+ImagickDraw::setTextUnderColor ; Specifies the color of a background rectangle
+ImagickDraw::setVectorGraphics ; Sets the vector graphics
+ImagickDraw::setViewbox ; Sets the overall canvas size
+ImagickDraw::skewX ; Skews the current coordinate system in the horizontal direction
+ImagickDraw::skewY ; Skews the current coordinate system in the vertical direction
+ImagickDraw::translate ; Applies a translation to the current coordinate system
+ImagickDraw::__construct ; The ImagickDraw constructor
+ImagickPixel::clear ; Clears resources associated with this object
+ImagickPixel::destroy ; Deallocates resources associated with this object
+ImagickPixel::getColor ; Returns the color
+ImagickPixel::getColorAsString ; Returns the color as a string
+ImagickPixel::getColorCount ; Returns the color count associated with this color
+ImagickPixel::getColorQuantum ; Description
+ImagickPixel::getColorValue ; Gets the normalized value of the provided color channel
+ImagickPixel::getColorValueQuantum ; Description
+ImagickPixel::getHSL ; Returns the normalized HSL color of the ImagickPixel object
+ImagickPixel::getIndex ; Description
+ImagickPixel::isPixelSimilar ; Check the distance between this color and another
+ImagickPixel::isPixelSimilarQuantum ; Description
+ImagickPixel::isSimilar ; Check the distance between this color and another
+ImagickPixel::setColor ; Sets the color
+ImagickPixel::setColorCount ; Description
+ImagickPixel::setColorValue ; Sets the normalized value of one of the channels
+ImagickPixel::setColorValueQuantum ; Description
+ImagickPixel::setHSL ; Sets the normalized HSL color
+ImagickPixel::setIndex ; Description
+ImagickPixel::__construct ; The ImagickPixel constructor
+ImagickPixelIterator::clear ; Clear resources associated with a PixelIterator
+ImagickPixelIterator::destroy ; Deallocates resources associated with a PixelIterator
+ImagickPixelIterator::getCurrentIteratorRow ; Returns the current row of ImagickPixel objects
+ImagickPixelIterator::getIteratorRow ; Returns the current pixel iterator row
+ImagickPixelIterator::getNextIteratorRow ; Returns the next row of the pixel iterator
+ImagickPixelIterator::getPreviousIteratorRow ; Returns the previous row
+ImagickPixelIterator::newPixelIterator ; Returns a new pixel iterator
+ImagickPixelIterator::newPixelRegionIterator ; Returns a new pixel iterator
+ImagickPixelIterator::resetIterator ; Resets the pixel iterator
+ImagickPixelIterator::setIteratorFirstRow ; Sets the pixel iterator to the first pixel row
+ImagickPixelIterator::setIteratorLastRow ; Sets the pixel iterator to the last pixel row
+ImagickPixelIterator::setIteratorRow ; Set the pixel iterator row
+ImagickPixelIterator::syncIterator ; Syncs the pixel iterator
+ImagickPixelIterator::__construct ; The ImagickPixelIterator constructor
+SolrClient::addDocument ; Adds a document to the index
+SolrClient::addDocuments ; Adds a collection of SolrInputDocument instances to the index
+SolrClient::commit ; Finalizes all add/deletes made to the index
+SolrClient::deleteById ; Delete by Id
+SolrClient::deleteByIds ; Deletes by Ids
+SolrClient::deleteByQueries ; Removes all documents matching any of the queries
+SolrClient::deleteByQuery ; Deletes all documents matching the given query
+SolrClient::getDebug ; Returns the debug data for the last connection attempt
+SolrClient::getOptions ; Returns the client options set internally
+SolrClient::optimize ; Defragments the index
+SolrClient::ping ; Checks if Solr server is still up
+SolrClient::query ; Sends a query to the server
+SolrClient::request ; Sends a raw update request
+SolrClient::rollback ; Rollbacks all add/deletes made to the index since the last commit
+SolrClient::setResponseWriter ; Sets the response writer used to prepare the response from Solr
+SolrClient::setServlet ; Changes the specified servlet type to a new value
+SolrClient::system ; Retrieve Solr Server information
+SolrClient::threads ; Checks the threads status
+SolrClient::__construct ; Constructor for the SolrClient object
+SolrClient::__destruct ; Destructor for SolrClient
+SolrClientException::getInternalInfo ; Returns internal information where the Exception was thrown
+SolrDisMaxQuery::addBigramPhraseField ; Adds a Phrase Bigram Field (pf2 parameter)
+SolrDisMaxQuery::addBoostQuery ; Adds a boost query field with value and optional boost (bq parameter)
+SolrDisMaxQuery::addPhraseField ; Adds a Phrase Field (pf parameter)
+SolrDisMaxQuery::addQueryField ; Add a query field with optional boost (qf parameter)
+SolrDisMaxQuery::addTrigramPhraseField ; Adds a Trigram Phrase Field (pf3 parameter)
+SolrDisMaxQuery::addUserField ; Adds a field to User Fields Parameter (uf)
+SolrDisMaxQuery::removeBigramPhraseField ; Removes phrase bigram field (pf2 parameter)
+SolrDisMaxQuery::removeBoostQuery ; Removes a boost query partial by field name (bq)
+SolrDisMaxQuery::removePhraseField ; Removes a Phrase Field (pf parameter)
+SolrDisMaxQuery::removeQueryField ; Removes a Query Field (qf parameter)
+SolrDisMaxQuery::removeTrigramPhraseField ; Removes a Trigram Phrase Field (pf3 parameter)
+SolrDisMaxQuery::removeUserField ; Removes a field from The User Fields Parameter (uf)
+SolrDisMaxQuery::setBigramPhraseFields ; Sets Bigram Phrase Fields and their boosts (and slops) using pf2 parameter
+SolrDisMaxQuery::setBigramPhraseSlop ; Sets Bigram Phrase Slop (ps2 parameter)
+SolrDisMaxQuery::setBoostFunction ; Sets a Boost Function (bf parameter).
+SolrDisMaxQuery::setBoostQuery ; Directly Sets Boost Query Parameter (bq)
+SolrDisMaxQuery::setMinimumMatch ; Set Minimum &quot;Should&quot; Match (mm)
+SolrDisMaxQuery::setPhraseFields ; Sets  Phrase Fields and their boosts (and slops) using pf2 parameter
+SolrDisMaxQuery::setPhraseSlop ; Sets the default slop on phrase queries (ps parameter)
+SolrDisMaxQuery::setQueryAlt ; Set Query Alternate (q.alt parameter)
+SolrDisMaxQuery::setQueryPhraseSlop ; specifies the amount of slop permitted on phrase queries explicitly included in the user's query string (qf parameter)
+SolrDisMaxQuery::setTieBreaker ; Sets Tie Breaker parameter (tie parameter)
+SolrDisMaxQuery::setTrigramPhraseFields ; Directly Sets Trigram Phrase Fields (pf3 parameter)
+SolrDisMaxQuery::setTrigramPhraseSlop ; Sets Trigram Phrase Slop (ps3 parameter)
+SolrDisMaxQuery::setUserFields ; Sets User Fields parameter (uf)
+SolrDisMaxQuery::useDisMaxQueryParser ; Switch QueryParser to be DisMax Query Parser
+SolrDisMaxQuery::useEDisMaxQueryParser ; Switch QueryParser to be EDisMax
+SolrDisMaxQuery::__construct ; Class Constructor
+SolrDocument::addField ; Adds a field to the document
+SolrDocument::clear ; Drops all the fields in the document
+SolrDocument::current ; Retrieves the current field
+SolrDocument::deleteField ; Removes a field from the document
+SolrDocument::fieldExists ; Checks if a field exists in the document
+SolrDocument::getField ; Retrieves a field by name
+SolrDocument::getFieldCount ; Returns the number of fields in this document
+SolrDocument::getFieldNames ; Returns an array of fields names in the document
+SolrDocument::getInputDocument ; Returns a SolrInputDocument equivalent of the object
+SolrDocument::key ; Retrieves the current key
+SolrDocument::merge ; Merges source to the current SolrDocument
+SolrDocument::next ; Moves the internal pointer to the next field
+SolrDocument::offsetExists ; Checks if a particular field exists
+SolrDocument::offsetGet ; Retrieves a field
+SolrDocument::offsetSet ; Adds a field to the document
+SolrDocument::offsetUnset ; Removes a field
+SolrDocument::reset ; This is an alias to SolrDocument::clear()
+SolrDocument::rewind ; Resets the internal pointer to the beginning
+SolrDocument::serialize ; Used for custom serialization
+SolrDocument::sort ; Sorts the fields in the document
+SolrDocument::toArray ; Returns an array representation of the document
+SolrDocument::unserialize ; Custom serialization of SolrDocument objects
+SolrDocument::valid ; Checks if the current position internally is still valid
+SolrDocument::__clone ; Creates a copy of a SolrDocument object
+SolrDocument::__construct ; Constructor
+SolrDocument::__destruct ; Destructor
+SolrDocument::__get ; Access the field as a property
+SolrDocument::__isset ; Checks if a field exists
+SolrDocument::__set ; Adds another field to the document
+SolrDocument::__unset ; Removes a field from the document
+SolrDocumentField::__construct ; Constructor
+SolrDocumentField::__destruct ; Destructor
+SolrException::getInternalInfo ; Returns internal information where the Exception was thrown
+SolrGenericResponse::__construct ; Constructor
+SolrGenericResponse::__destruct ; Destructor
+SolrIllegalArgumentException::getInternalInfo ; Returns internal information where the Exception was thrown
+SolrIllegalOperationException::getInternalInfo ; Returns internal information where the Exception was thrown
+SolrInputDocument::addField ; Adds a field to the document
+SolrInputDocument::clear ; Resets the input document
+SolrInputDocument::deleteField ; Removes a field from the document
+SolrInputDocument::fieldExists ; Checks if a field exists
+SolrInputDocument::getBoost ; Retrieves the current boost value for the document
+SolrInputDocument::getField ; Retrieves a field by name
+SolrInputDocument::getFieldBoost ; Retrieves the boost value for a particular field
+SolrInputDocument::getFieldCount ; Returns the number of fields in the document
+SolrInputDocument::getFieldNames ; Returns an array containing all the fields in the document
+SolrInputDocument::merge ; Merges one input document into another
+SolrInputDocument::reset ; This is an alias of SolrInputDocument::clear
+SolrInputDocument::setBoost ; Sets the boost value for this document
+SolrInputDocument::setFieldBoost ; Sets the index-time boost value for a field
+SolrInputDocument::sort ; Sorts the fields within the document
+SolrInputDocument::toArray ; Returns an array representation of the input document
+SolrInputDocument::__clone ; Creates a copy of a SolrDocument
+SolrInputDocument::__construct ; Constructor
+SolrInputDocument::__destruct ; Destructor
+SolrModifiableParams::__construct ; Constructor
+SolrModifiableParams::__destruct ; Destructor
+SolrObject::getPropertyNames ; Returns an array of all the names of the properties
+SolrObject::offsetExists ; Checks if the property exists
+SolrObject::offsetGet ; Used to retrieve a property
+SolrObject::offsetSet ; Sets the value for a property
+SolrObject::offsetUnset ; Unsets the value for the property
+SolrObject::__construct ; Creates Solr object
+SolrObject::__destruct ; Destructor
+SolrParams::add ; This is an alias for SolrParams::addParam
+SolrParams::addParam ; Adds a parameter to the object
+SolrParams::get ; This is an alias for SolrParams::getParam
+SolrParams::getParam ; Returns a parameter value
+SolrParams::getParams ; Returns an array of non URL-encoded parameters
+SolrParams::getPreparedParams ; Returns an array of URL-encoded parameters
+SolrParams::serialize ; Used for custom serialization
+SolrParams::set ; An alias of SolrParams::setParam
+SolrParams::setParam ; Sets the parameter to the specified value
+SolrParams::toString ; Returns all the name-value pair parameters in the object
+SolrParams::unserialize ; Used for custom serialization
+SolrPingResponse::getResponse ; Returns the response from the server
+SolrPingResponse::__construct ; Constructor
+SolrPingResponse::__destruct ; Destructor
+SolrQuery::addFacetDateField ; Maps to facet.date
+SolrQuery::addFacetDateOther ; Adds another facet.date.other parameter
+SolrQuery::addFacetField ; Adds another field to the facet
+SolrQuery::addFacetQuery ; Adds a facet query
+SolrQuery::addField ; Specifies which fields to return in the result
+SolrQuery::addFilterQuery ; Specifies a filter query
+SolrQuery::addHighlightField ; Maps to hl.fl
+SolrQuery::addMltField ; Sets a field to use for similarity
+SolrQuery::addMltQueryField ; Maps to mlt.qf
+SolrQuery::addSortField ; Used to control how the results should be sorted
+SolrQuery::addStatsFacet ; Requests a return of sub results for values within the given facet
+SolrQuery::addStatsField ; Maps to stats.field parameter
+SolrQuery::getFacet ; Returns the value of the facet parameter
+SolrQuery::getFacetDateEnd ; Returns the value for the facet.date.end parameter
+SolrQuery::getFacetDateFields ; Returns all the facet.date fields
+SolrQuery::getFacetDateGap ; Returns the value of the facet.date.gap parameter
+SolrQuery::getFacetDateHardEnd ; Returns the value of the facet.date.hardend parameter
+SolrQuery::getFacetDateOther ; Returns the value for the facet.date.other parameter
+SolrQuery::getFacetDateStart ; Returns the  lower bound for the first date range for all date faceting on this field
+SolrQuery::getFacetFields ; Returns all the facet fields
+SolrQuery::getFacetLimit ; Returns the maximum number of constraint counts that should be returned for the facet fields
+SolrQuery::getFacetMethod ; Returns the value of the facet.method parameter
+SolrQuery::getFacetMinCount ; Returns the minimum counts for facet fields should be included in the response
+SolrQuery::getFacetMissing ; Returns the current state of the facet.missing parameter
+SolrQuery::getFacetOffset ; Returns an offset into the list of constraints to be used for pagination
+SolrQuery::getFacetPrefix ; Returns the facet prefix
+SolrQuery::getFacetQueries ; Returns all the facet queries
+SolrQuery::getFacetSort ; Returns the facet sort type
+SolrQuery::getFields ; Returns the list of fields that will be returned in the response
+SolrQuery::getFilterQueries ; Returns an array of filter queries
+SolrQuery::getHighlight ; Returns the state of the hl parameter
+SolrQuery::getHighlightAlternateField ; Returns the highlight field to use as backup or default
+SolrQuery::getHighlightFields ; Returns all the fields that Solr should generate highlighted snippets for
+SolrQuery::getHighlightFormatter ; Returns the formatter for the highlighted output
+SolrQuery::getHighlightFragmenter ; Returns the text snippet generator for highlighted text
+SolrQuery::getHighlightFragsize ; Returns the number of characters of fragments to consider for highlighting
+SolrQuery::getHighlightHighlightMultiTerm ; Returns whether or not to enable highlighting for range/wildcard/fuzzy/prefix queries
+SolrQuery::getHighlightMaxAlternateFieldLength ; Returns the maximum number of characters of the field to return
+SolrQuery::getHighlightMaxAnalyzedChars ; Returns the maximum number of characters into a document to look for suitable snippets
+SolrQuery::getHighlightMergeContiguous ; Returns whether or not the collapse contiguous fragments into a single fragment
+SolrQuery::getHighlightRegexMaxAnalyzedChars ; Returns the maximum number of characters from a field when using the regex fragmenter
+SolrQuery::getHighlightRegexPattern ; Returns the regular expression for fragmenting
+SolrQuery::getHighlightRegexSlop ; Returns the deviation factor from the ideal fragment size
+SolrQuery::getHighlightRequireFieldMatch ; Returns if a field will only be highlighted if the query matched in this particular field
+SolrQuery::getHighlightSimplePost ; Returns the text which appears after a highlighted term
+SolrQuery::getHighlightSimplePre ; Returns the text which appears before a highlighted term
+SolrQuery::getHighlightSnippets ; Returns the maximum number of highlighted snippets to generate per field
+SolrQuery::getHighlightUsePhraseHighlighter ; Returns the state of the hl.usePhraseHighlighter parameter
+SolrQuery::getMlt ; Returns whether or not MoreLikeThis results should be enabled
+SolrQuery::getMltBoost ; Returns whether or not the query will be boosted by the interesting term relevance
+SolrQuery::getMltCount ; Returns the number of similar documents to return for each result
+SolrQuery::getMltFields ; Returns all the fields to use for similarity
+SolrQuery::getMltMaxNumQueryTerms ; Returns the maximum number of query terms that will be included in any generated query
+SolrQuery::getMltMaxNumTokens ; Returns the maximum number of tokens to parse in each document field that is not stored with TermVector support
+SolrQuery::getMltMaxWordLength ; Returns the maximum word length above which words will be ignored
+SolrQuery::getMltMinDocFrequency ; Returns the treshold frequency at which words will be ignored which do not occur in at least this many docs
+SolrQuery::getMltMinTermFrequency ; Returns the frequency below which terms will be ignored in the source document
+SolrQuery::getMltMinWordLength ; Returns the minimum word length below which words will be ignored
+SolrQuery::getMltQueryFields ; Returns the query fields and their boosts
+SolrQuery::getQuery ; Returns the main query
+SolrQuery::getRows ; Returns the maximum number of documents
+SolrQuery::getSortFields ; Returns all the sort fields
+SolrQuery::getStart ; Returns the offset in the complete result set
+SolrQuery::getStats ; Returns whether or not stats is enabled
+SolrQuery::getStatsFacets ; Returns all the stats facets that were set
+SolrQuery::getStatsFields ; Returns all the statistics fields
+SolrQuery::getTerms ; Returns whether or not the TermsComponent is enabled
+SolrQuery::getTermsField ; Returns the field from which the terms are retrieved
+SolrQuery::getTermsIncludeLowerBound ; Returns whether or not to include the lower bound in the result set
+SolrQuery::getTermsIncludeUpperBound ; Returns whether or not to include the upper bound term in the result set
+SolrQuery::getTermsLimit ; Returns the maximum number of terms Solr should return
+SolrQuery::getTermsLowerBound ; Returns the term to start at
+SolrQuery::getTermsMaxCount ; Returns the maximum document frequency
+SolrQuery::getTermsMinCount ; Returns the minimum document frequency to return in order to be included
+SolrQuery::getTermsPrefix ; Returns the term prefix
+SolrQuery::getTermsReturnRaw ; Whether or not to return raw characters
+SolrQuery::getTermsSort ; Returns an integer indicating how terms are sorted
+SolrQuery::getTermsUpperBound ; Returns the term to stop at
+SolrQuery::getTimeAllowed ; Returns the time in milliseconds allowed for the query to finish
+SolrQuery::removeFacetDateField ; Removes one of the facet date fields
+SolrQuery::removeFacetDateOther ; Removes one of the facet.date.other parameters
+SolrQuery::removeFacetField ; Removes one of the facet.date parameters
+SolrQuery::removeFacetQuery ; Removes one of the facet.query parameters
+SolrQuery::removeField ; Removes a field from the list of fields
+SolrQuery::removeFilterQuery ; Removes a filter query
+SolrQuery::removeHighlightField ; Removes one of the fields used for highlighting
+SolrQuery::removeMltField ; Removes one of the moreLikeThis fields
+SolrQuery::removeMltQueryField ; Removes one of the moreLikeThis query fields
+SolrQuery::removeSortField ; Removes one of the sort fields
+SolrQuery::removeStatsFacet ; Removes one of the stats.facet parameters
+SolrQuery::removeStatsField ; Removes one of the stats.field parameters
+SolrQuery::setEchoHandler ; Toggles the echoHandler parameter
+SolrQuery::setEchoParams ; Determines what kind of parameters to include in the response
+SolrQuery::setExplainOther ; Sets the explainOther common query parameter
+SolrQuery::setFacet ; Maps to the facet parameter. Enables or disables facetting
+SolrQuery::setFacetDateEnd ; Maps to facet.date.end
+SolrQuery::setFacetDateGap ; Maps to facet.date.gap
+SolrQuery::setFacetDateHardEnd ; Maps to facet.date.hardend
+SolrQuery::setFacetDateStart ; Maps to facet.date.start
+SolrQuery::setFacetEnumCacheMinDefaultFrequency ; Sets the minimum document frequency used for determining term count
+SolrQuery::setFacetLimit ; Maps to facet.limit
+SolrQuery::setFacetMethod ; Specifies the type of algorithm to use when faceting a field
+SolrQuery::setFacetMinCount ; Maps to facet.mincount
+SolrQuery::setFacetMissing ; Maps to facet.missing
+SolrQuery::setFacetOffset ; Sets the offset into the list of constraints to allow for pagination
+SolrQuery::setFacetPrefix ; Specifies a string prefix with which to limits the terms on which to facet
+SolrQuery::setFacetSort ; Determines the ordering of the facet field constraints
+SolrQuery::setHighlight ; Enables or disables highlighting
+SolrQuery::setHighlightAlternateField ; Specifies the backup field to use
+SolrQuery::setHighlightFormatter ; Specify a formatter for the highlight output
+SolrQuery::setHighlightFragmenter ; Sets a text snippet generator for highlighted text
+SolrQuery::setHighlightFragsize ; The size of fragments to consider for highlighting
+SolrQuery::setHighlightHighlightMultiTerm ; Use SpanScorer to highlight phrase terms
+SolrQuery::setHighlightMaxAlternateFieldLength ; Sets the maximum number of characters of the field to return
+SolrQuery::setHighlightMaxAnalyzedChars ; Specifies the number of characters into a document to look for suitable snippets
+SolrQuery::setHighlightMergeContiguous ; Whether or not to collapse contiguous fragments into a single fragment
+SolrQuery::setHighlightRegexMaxAnalyzedChars ; Specify the maximum number of characters to analyze
+SolrQuery::setHighlightRegexPattern ; Specify the regular expression for fragmenting
+SolrQuery::setHighlightRegexSlop ; Sets the factor by which the regex fragmenter can stray from the ideal fragment size
+SolrQuery::setHighlightRequireFieldMatch ; Require field matching during highlighting
+SolrQuery::setHighlightSimplePost ; Sets the text which appears after a highlighted term
+SolrQuery::setHighlightSimplePre ; Sets the text which appears before a highlighted term
+SolrQuery::setHighlightSnippets ; Sets the maximum number of highlighted snippets to generate per field
+SolrQuery::setHighlightUsePhraseHighlighter ; Whether to highlight phrase terms only when they appear within the query phrase
+SolrQuery::setMlt ; Enables or disables moreLikeThis
+SolrQuery::setMltBoost ; Set if the query will be boosted by the interesting term relevance
+SolrQuery::setMltCount ; Set the number of similar documents to return for each result
+SolrQuery::setMltMaxNumQueryTerms ; Sets the maximum number of query terms included
+SolrQuery::setMltMaxNumTokens ; Specifies the maximum number of tokens to parse
+SolrQuery::setMltMaxWordLength ; Sets the maximum word length
+SolrQuery::setMltMinDocFrequency ; Sets the mltMinDoc frequency
+SolrQuery::setMltMinTermFrequency ; Sets the frequency below which terms will be ignored in the source docs
+SolrQuery::setMltMinWordLength ; Sets the minimum word length
+SolrQuery::setOmitHeader ; Exclude the header from the returned results
+SolrQuery::setQuery ; Sets the search query
+SolrQuery::setRows ; Specifies the maximum number of rows to return in the result
+SolrQuery::setShowDebugInfo ; Flag to show debug information
+SolrQuery::setStart ; Specifies the number of rows to skip
+SolrQuery::setStats ; Enables or disables the Stats component
+SolrQuery::setTerms ; Enables or disables the TermsComponent
+SolrQuery::setTermsField ; Sets the name of the field to get the Terms from
+SolrQuery::setTermsIncludeLowerBound ; Include the lower bound term in the result set
+SolrQuery::setTermsIncludeUpperBound ; Include the upper bound term in the result set
+SolrQuery::setTermsLimit ; Sets the maximum number of terms to return
+SolrQuery::setTermsLowerBound ; Specifies the Term to start from
+SolrQuery::setTermsMaxCount ; Sets the maximum document frequency
+SolrQuery::setTermsMinCount ; Sets the minimum document frequency
+SolrQuery::setTermsPrefix ; Restrict matches to terms that start with the prefix
+SolrQuery::setTermsReturnRaw ; Return the raw characters of the indexed term
+SolrQuery::setTermsSort ; Specifies how to sort the returned terms
+SolrQuery::setTermsUpperBound ; Sets the term to stop at
+SolrQuery::setTimeAllowed ; The time allowed for search to finish
+SolrQuery::__construct ; Constructor
+SolrQuery::__destruct ; Destructor
+SolrQueryResponse::__construct ; Constructor
+SolrQueryResponse::__destruct ; Destructor
+SolrResponse::getDigestedResponse ; Returns the XML response as serialized PHP data
+SolrResponse::getHttpStatus ; Returns the HTTP status of the response
+SolrResponse::getHttpStatusMessage ; Returns more details on the HTTP status
+SolrResponse::getRawRequest ; Returns the raw request sent to the Solr server
+SolrResponse::getRawRequestHeaders ; Returns the raw request headers sent to the Solr server
+SolrResponse::getRawResponse ; Returns the raw response from the server
+SolrResponse::getRawResponseHeaders ; Returns the raw response headers from the server
+SolrResponse::getRequestUrl ; Returns the full URL the request was sent to
+SolrResponse::getResponse ; Returns a SolrObject representing the XML response from the server
+SolrResponse::setParseMode ; Sets the parse mode
+SolrResponse::success ; Was the request a success
+SolrServerException::getInternalInfo ; Returns internal information where the Exception was thrown
+SolrUpdateResponse::__construct ; Constructor
+SolrUpdateResponse::__destruct ; Destructor
+SolrUtils::digestXmlResponse ; Parses an response XML string into a SolrObject
+SolrUtils::escapeQueryChars ; Escapes a lucene query string
+SolrUtils::getSolrVersion ; Returns the current version of the Solr extension
+SolrUtils::queryPhrase ; Prepares a phrase from an unescaped lucene string
+solr_get_version ; 返回当前Solr扩展的版本
+VarnishAdmin::auth ; Authenticate on a varnish instance
+VarnishAdmin::ban ; Ban URLs using a VCL expression
+VarnishAdmin::banUrl ; Ban an URL using a VCL expression
+VarnishAdmin::clearPanic ; Clear varnish instance panic messages
+VarnishAdmin::connect ; Connect to a varnish instance administration interface
+VarnishAdmin::disconnect ; Disconnect from a varnish instance administration interface
+VarnishAdmin::getPanic ; Get the last panic message on a varnish instance
+VarnishAdmin::getParams ; Fetch current varnish instance configuration parameters
+VarnishAdmin::isRunning ; Check if the varnish slave process is currently running
+VarnishAdmin::setCompat ; Set the class compat configuration param
+VarnishAdmin::setHost ; Set the class host configuration param
+VarnishAdmin::setIdent ; Set the class ident configuration param
+VarnishAdmin::setParam ; Set configuration param on the current varnish instance
+VarnishAdmin::setPort ; Set the class port configuration param
+VarnishAdmin::setSecret ; Set the class secret configuration param
+VarnishAdmin::setTimeout ; Set the class timeout configuration param
+VarnishAdmin::start ; Start varnish worker process
+VarnishAdmin::stop ; Stop varnish worker process
+VarnishAdmin::__construct ; VarnishAdmin constructor
+VarnishLog::getLine ; Get next log line
+VarnishLog::getTagName ; Get the log tag string representation by its index
+VarnishLog::__construct ; Varnishlog constructor
+VarnishStat::getSnapshot ; Get the current varnish instance statistics snapshot
+VarnishStat::__construct ; VarnishStat constructor
+WeakMap::count ; Counts the number of live entries in the map
+WeakMap::current ; Returns the current value under iteration
+WeakMap::key ; Returns the current key under iteration.
+WeakMap::next ; Advances to the next map element
+WeakMap::offsetExists ; Checks whether a certain object is in the map
+WeakMap::offsetGet ; Returns the value pointed to by a certain object
+WeakMap::offsetSet ; Updates the map with a new key-value pair
+WeakMap::offsetUnset ; Removes an entry from the map
+WeakMap::rewind ; Rewinds the iterator to the beginning of the map
+WeakMap::valid ; Returns whether the iterator is still on a valid map element
+WeakMap::__construct ; Constructs a new map
+Weakref::acquire ; Acquires a strong reference on that object
+Weakref::get ; Returns the object pointed to by the weak reference
+Weakref::release ; Releases a previously acquired reference
+Weakref::valid ; Checks whether the object referenced still exists
+Weakref::__construct ; Constructs a new weak reference
+wincache_fcache_fileinfo ; Retrieves information about files cached in the file cache
+wincache_fcache_meminfo ; Retrieves information about file cache memory usage
+wincache_lock ; Acquires an exclusive lock on a given key
+wincache_ocache_fileinfo ; Retrieves information about files cached in the opcode cache
+wincache_ocache_meminfo ; Retrieves information about opcode cache memory usage
+wincache_refresh_if_changed ; Refreshes the cache entries for the cached files
+wincache_rplist_fileinfo ; Retrieves information about resolve file path cache
+wincache_rplist_meminfo ; Retrieves information about memory usage by the resolve file path cache
+wincache_scache_info ; Retrieves information about files cached in the session cache
+wincache_scache_meminfo ; Retrieves information about session cache memory usage
+wincache_ucache_add ; Adds a variable in user cache only if variable does not already exist in the cache
+wincache_ucache_cas ; Compares the variable with old value and assigns new value to it
+wincache_ucache_clear ; Deletes entire content of the user cache
+wincache_ucache_dec ; Decrements the value associated with the key
+wincache_ucache_delete ; Deletes variables from the user cache
+wincache_ucache_exists ; Checks if a variable exists in the user cache
+wincache_ucache_get ; Gets a variable stored in the user cache
+wincache_ucache_inc ; Increments the value associated with the key
+wincache_ucache_info ; Retrieves information about data stored in the user cache
+wincache_ucache_meminfo ; Retrieves information about user cache memory usage
+wincache_ucache_set ; Adds a variable in user cache and overwrites a variable if it already exists in the cache
+wincache_unlock ; Releases an exclusive lock on a given key
+uopz_backup ; Backup a function
+uopz_compose ; Compose a class
+uopz_copy ; Copy a function
+uopz_delete ; Delete a function
+uopz_extend ; Extend a class at runtime
+uopz_flags ; Get or set flags on function or class
+uopz_function ; Creates a function at runtime
+uopz_implement ; Implements an interface at runtime
+uopz_overload ; Overload a VM opcode
+uopz_redefine ; Redefine a constant
+uopz_rename ; Rename a function at runtime
+uopz_restore ; Restore a previously backed up function
+uopz_undefine ; Undefine a constant
+Judy::byCount ; Locate the Nth index present in the Judy array
+Judy::count ; Count the number of elements in the Judy array
+Judy::first ; Search for the first index in the Judy array
+Judy::firstEmpty ; Search for the first absent index in the Judy array
+Judy::free ; Free the entire Judy array
+Judy::getType ; Return the type of the current Judy array
+Judy::last ; Search for the last index in the Judy array
+Judy::lastEmpty ; Search for the last absent index in the Judy array
+Judy::memoryUsage ; Return the memory used by the Judy array
+Judy::next ; Search for the next index in the Judy array
+Judy::nextEmpty ; Search for the next absent index in the Judy array
+Judy::offsetExists ; Whether a offset exists
+Judy::offsetGet ; Offset to retrieve
+Judy::offsetSet ; Offset to set
+Judy::offsetUnset ; Offset to unset
+Judy::prev ; Search for the previous index in the Judy array
+Judy::prevEmpty ; Search for the previous absent index in the Judy array
+Judy::size ; Return the size of the current Judy array
+Judy::__construct ; Construct a new Judy object
+Judy::__destruct ; Destruct a Judy object
+judy_type ; Return the type of a Judy array
+judy_version ; Return or print the current PHP Judy version
