@@ -20,6 +20,8 @@
 
 " 关闭兼容模式
 set nocompatible
+set term=screen-256color
+colorscheme molokai
 
 set ttyfast
 set lazyredraw
@@ -325,4 +327,19 @@ endif
 
 silent! source $VIMHOME/local/local.vimrc
 
-" }}}
+" }}} 
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_max_files=0
+let g:ctrlp_max_depth=40
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_use_caching = 1
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.png,*.jpg     " MacOSX/Linux
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|png|jpg|smarty)$'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn|smarty)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+
